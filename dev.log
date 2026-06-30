@@ -1,0 +1,1585 @@
+
+> health-booster@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.9 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.56.1:3000
+- Environments: .env
+✓ Ready in 393ms
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of E:\AI Claude\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * E:\AI Claude\Health Booster\health-booster\package-lock.json
+
+
+ GET / 200 in 549ms (next.js: 123ms, application-code: 426ms)
+ GET / 200 in 119ms (next.js: 5ms, application-code: 115ms)
+ GET /admin/login 200 in 136ms (next.js: 28ms, proxy.ts: 40ms, application-code: 69ms)
+ GET /admin/login 200 in 54ms (next.js: 4ms, proxy.ts: 4ms, application-code: 46ms)
+ POST /api/admin/login 200 in 331ms (next.js: 307ms, application-code: 24ms)
+ GET /admin/dashboard 200 in 495ms (next.js: 370ms, proxy.ts: 9ms, application-code: 117ms)
+ GET /admin/dashboard 200 in 80ms (next.js: 6ms, proxy.ts: 4ms, application-code: 70ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_188ftk9._.js:2477:13)
+ GET /admin/orders 200 in 374ms (next.js: 229ms, proxy.ts: 6ms, application-code: 139ms)
+ GET /admin/packages 200 in 374ms (next.js: 289ms, proxy.ts: 3ms, application-code: 82ms)
+ GET /admin/settings 200 in 322ms (next.js: 253ms, proxy.ts: 3ms, application-code: 66ms)
+ GET /admin/login 200 in 78ms (next.js: 7ms, proxy.ts: 7ms, application-code: 64ms)
+ POST /api/admin/login 200 in 14ms (next.js: 4ms, application-code: 11ms)
+ GET /admin/dashboard 200 in 129ms (next.js: 5ms, proxy.ts: 5ms, application-code: 120ms)
+ GET /admin/dashboard 200 in 200ms (next.js: 7ms, proxy.ts: 7ms, application-code: 186ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_188ftk9._.js:2477:13)
+ GET /admin/orders 200 in 43ms (next.js: 5ms, proxy.ts: 5ms, application-code: 33ms)
+ GET /admin/products 200 in 395ms (next.js: 334ms, proxy.ts: 4ms, application-code: 56ms)
+ GET /admin/packages 200 in 179ms (next.js: 6ms, proxy.ts: 5ms, application-code: 168ms)
+ GET /admin/settings 200 in 176ms (next.js: 5ms, proxy.ts: 4ms, application-code: 167ms)
+ PUT /api/admin/settings 200 in 283ms (next.js: 230ms, application-code: 53ms)
+✓ Compiled in 146ms
+ PUT /api/admin/settings 200 in 37ms (next.js: 3ms, application-code: 34ms)
+ GET / 200 in 141ms (next.js: 5ms, application-code: 136ms)
+✓ Compiled in 680ms
+ GET / 200 in 433ms (next.js: 90ms, application-code: 343ms)
+ GET /admin/settings 200 in 440ms (next.js: 56ms, proxy.ts: 243ms, application-code: 141ms)
+ GET / 200 in 197ms (next.js: 5ms, application-code: 192ms)
+ GET / 200 in 110ms (next.js: 14ms, application-code: 96ms)
+ GET /admin/settings 200 in 143ms (next.js: 8ms, proxy.ts: 43ms, application-code: 92ms)
+ GET /admin/settings 200 in 58ms (next.js: 7ms, proxy.ts: 9ms, application-code: 41ms)
+✓ Compiled in 94ms
+ GET / 200 in 432ms (next.js: 88ms, application-code: 344ms)
+ GET /admin/settings 200 in 437ms (next.js: 50ms, proxy.ts: 248ms, application-code: 139ms)
+ GET / 200 in 190ms (next.js: 10ms, application-code: 181ms)
+ GET / 200 in 101ms (next.js: 7ms, application-code: 94ms)
+ GET /admin/settings 200 in 140ms (next.js: 8ms, proxy.ts: 45ms, application-code: 87ms)
+ GET /admin/settings 200 in 54ms (next.js: 7ms, proxy.ts: 7ms, application-code: 40ms)
+✓ Compiled in 80ms
+ GET / 200 in 329ms (next.js: 90ms, application-code: 238ms)
+ GET /admin/settings 200 in 153ms (next.js: 22ms, proxy.ts: 86ms, application-code: 45ms)
+✓ Compiled in 45ms
+ GET / 200 in 318ms (next.js: 94ms, application-code: 224ms)
+ GET /admin/settings 200 in 151ms (next.js: 17ms, proxy.ts: 67ms, application-code: 66ms)
+✓ Compiled in 71ms
+✓ Compiled in 110ms
+ GET / 200 in 481ms (next.js: 98ms, application-code: 382ms)
+ GET / 200 in 216ms (next.js: 6ms, application-code: 210ms)
+ GET /admin/settings 200 in 490ms (next.js: 63ms, proxy.ts: 273ms, application-code: 154ms)
+ GET / 200 in 120ms (next.js: 9ms, application-code: 111ms)
+ GET /admin/settings 200 in 123ms (next.js: 7ms, proxy.ts: 18ms, application-code: 98ms)
+ GET /admin/settings 200 in 59ms (next.js: 7ms, proxy.ts: 8ms, application-code: 44ms)
+ GET / 200 in 461ms (next.js: 94ms, application-code: 366ms)
+ GET / 200 in 220ms (next.js: 8ms, application-code: 212ms)
+ GET /admin/settings 200 in 488ms (next.js: 56ms, proxy.ts: 238ms, application-code: 194ms)
+ GET / 200 in 255ms (next.js: 56ms, application-code: 200ms)
+ GET / 200 in 256ms (next.js: 86ms, application-code: 169ms)
+ GET / 200 in 381ms (next.js: 120ms, application-code: 261ms)
+ GET / 200 in 252ms (next.js: 6ms, application-code: 247ms)
+ GET / 200 in 214ms (next.js: 7ms, application-code: 207ms)
+ GET / 200 in 209ms (next.js: 12ms, application-code: 197ms)
+ GET / 200 in 170ms (next.js: 8ms, application-code: 162ms)
+ GET / 200 in 232ms (next.js: 40ms, application-code: 192ms)
+ GET / 200 in 241ms (next.js: 5ms, application-code: 236ms)
+ GET / 200 in 240ms (next.js: 6ms, application-code: 235ms)
+ GET / 200 in 203ms (next.js: 37ms, application-code: 166ms)
+ GET / 200 in 237ms (next.js: 6ms, application-code: 231ms)
+ GET / 200 in 164ms (next.js: 8ms, application-code: 156ms)
+ GET / 200 in 196ms (next.js: 9ms, application-code: 187ms)
+ GET / 200 in 237ms (next.js: 5ms, application-code: 232ms)
+ GET / 200 in 235ms (next.js: 6ms, application-code: 229ms)
+ GET / 200 in 199ms (next.js: 6ms, application-code: 193ms)
+ GET / 200 in 231ms (next.js: 37ms, application-code: 194ms)
+ GET / 200 in 158ms (next.js: 6ms, application-code: 152ms)
+ GET / 200 in 194ms (next.js: 8ms, application-code: 186ms)
+ GET / 200 in 233ms (next.js: 4ms, application-code: 228ms)
+ GET / 200 in 238ms (next.js: 7ms, application-code: 232ms)
+ GET / 200 in 201ms (next.js: 7ms, application-code: 194ms)
+ GET / 200 in 201ms (next.js: 37ms, application-code: 164ms)
+ GET / 200 in 170ms (next.js: 10ms, application-code: 160ms)
+ GET / 200 in 209ms (next.js: 10ms, application-code: 200ms)
+ GET / 200 in 246ms (next.js: 5ms, application-code: 241ms)
+ GET / 200 in 245ms (next.js: 7ms, application-code: 239ms)
+ GET / 200 in 208ms (next.js: 6ms, application-code: 202ms)
+ GET / 200 in 208ms (next.js: 37ms, application-code: 171ms)
+ GET / 200 in 167ms (next.js: 6ms, application-code: 161ms)
+ GET / 200 in 193ms (next.js: 6ms, application-code: 188ms)
+ GET / 200 in 227ms (next.js: 5ms, application-code: 222ms)
+ GET / 200 in 235ms (next.js: 6ms, application-code: 229ms)
+ GET / 200 in 199ms (next.js: 5ms, application-code: 194ms)
+ GET / 200 in 200ms (next.js: 35ms, application-code: 165ms)
+ GET / 200 in 175ms (next.js: 6ms, application-code: 169ms)
+ GET / 200 in 140ms (next.js: 5ms, application-code: 135ms)
+ GET / 200 in 142ms (next.js: 6ms, application-code: 136ms)
+ GET / 200 in 146ms (next.js: 8ms, application-code: 138ms)
+ GET /admin/settings 200 in 178ms (next.js: 8ms, proxy.ts: 47ms, application-code: 123ms)
+ GET /admin/settings 200 in 247ms (next.js: 7ms, proxy.ts: 7ms, application-code: 233ms)
+ GET /admin/settings 200 in 223ms (next.js: 12ms, proxy.ts: 15ms, application-code: 197ms)
+ GET /admin/settings 200 in 223ms (next.js: 44ms, proxy.ts: 15ms, application-code: 164ms)
+ GET /admin/settings 200 in 223ms (next.js: 77ms, proxy.ts: 14ms, application-code: 131ms)
+ GET /admin/settings 200 in 256ms (next.js: 114ms, proxy.ts: 15ms, application-code: 128ms)
+ GET /admin/settings 200 in 261ms (next.js: 7ms, proxy.ts: 153ms, application-code: 101ms)
+ GET /admin/settings 200 in 228ms (next.js: 8ms, proxy.ts: 6ms, application-code: 215ms)
+ GET /admin/settings 200 in 238ms (next.js: 12ms, proxy.ts: 15ms, application-code: 210ms)
+ GET /admin/settings 200 in 233ms (next.js: 45ms, proxy.ts: 13ms, application-code: 175ms)
+ GET /admin/settings 200 in 234ms (next.js: 79ms, proxy.ts: 13ms, application-code: 142ms)
+ GET /admin/settings 200 in 266ms (next.js: 115ms, proxy.ts: 13ms, application-code: 138ms)
+ GET /admin/settings 200 in 232ms (next.js: 7ms, proxy.ts: 50ms, application-code: 175ms)
+ GET /admin/settings 200 in 232ms (next.js: 8ms, proxy.ts: 17ms, application-code: 207ms)
+ GET /admin/settings 200 in 221ms (next.js: 11ms, proxy.ts: 15ms, application-code: 195ms)
+ GET /admin/settings 200 in 219ms (next.js: 42ms, proxy.ts: 14ms, application-code: 163ms)
+ GET /admin/settings 200 in 216ms (next.js: 79ms, proxy.ts: 12ms, application-code: 125ms)
+ GET /admin/settings 200 in 249ms (next.js: 114ms, proxy.ts: 11ms, application-code: 124ms)
+ GET /admin/settings 200 in 221ms (next.js: 7ms, proxy.ts: 46ms, application-code: 169ms)
+ GET /admin/settings 200 in 235ms (next.js: 10ms, proxy.ts: 5ms, application-code: 220ms)
+ GET /admin/settings 200 in 268ms (next.js: 12ms, proxy.ts: 47ms, application-code: 209ms)
+ GET /admin/settings 200 in 235ms (next.js: 43ms, proxy.ts: 16ms, application-code: 176ms)
+ GET /admin/settings 200 in 233ms (next.js: 79ms, proxy.ts: 14ms, application-code: 140ms)
+ GET /admin/settings 200 in 269ms (next.js: 129ms, proxy.ts: 11ms, application-code: 130ms)
+ GET /admin/settings 200 in 262ms (next.js: 6ms, proxy.ts: 44ms, application-code: 212ms)
+ GET /admin/settings 200 in 233ms (next.js: 13ms, proxy.ts: 7ms, application-code: 213ms)
+ GET /admin/settings 200 in 265ms (next.js: 10ms, proxy.ts: 50ms, application-code: 205ms)
+ GET /admin/settings 200 in 268ms (next.js: 44ms, proxy.ts: 50ms, application-code: 174ms)
+ GET /admin/settings 200 in 231ms (next.js: 80ms, proxy.ts: 16ms, application-code: 134ms)
+ GET /admin/settings 200 in 266ms (next.js: 49ms, proxy.ts: 80ms, application-code: 137ms)
+ GET /admin/settings 200 in 283ms (next.js: 8ms, proxy.ts: 46ms, application-code: 229ms)
+ GET /admin/settings 200 in 242ms (next.js: 14ms, proxy.ts: 8ms, application-code: 219ms)
+ GET /admin/settings 200 in 271ms (next.js: 12ms, proxy.ts: 49ms, application-code: 210ms)
+ GET /admin/settings 200 in 271ms (next.js: 44ms, proxy.ts: 49ms, application-code: 178ms)
+ GET /admin/settings 200 in 271ms (next.js: 78ms, proxy.ts: 48ms, application-code: 145ms)
+ GET /admin/settings 200 in 274ms (next.js: 9ms, proxy.ts: 130ms, application-code: 135ms)
+ GET /admin/settings 200 in 227ms (next.js: 9ms, proxy.ts: 8ms, application-code: 210ms)
+ GET /admin/settings 200 in 218ms (next.js: 12ms, proxy.ts: 43ms, application-code: 163ms)
+ GET /admin/settings 200 in 173ms (next.js: 9ms, proxy.ts: 47ms, application-code: 116ms)
+ GET /admin/settings 200 in 171ms (next.js: 42ms, proxy.ts: 47ms, application-code: 82ms)
+ GET /admin/settings 200 in 171ms (next.js: 79ms, proxy.ts: 47ms, application-code: 45ms)
+✓ Compiled in 99ms
+ GET / 200 in 579ms (next.js: 84ms, application-code: 495ms)
+ GET /admin/settings 200 in 585ms (next.js: 161ms, proxy.ts: 241ms, application-code: 184ms)
+ GET / 200 in 343ms (next.js: 9ms, application-code: 334ms)
+ GET / 200 in 151ms (next.js: 7ms, application-code: 144ms)
+ GET /admin/settings 200 in 155ms (next.js: 7ms, proxy.ts: 53ms, application-code: 94ms)
+ GET /admin/settings 200 in 58ms (next.js: 8ms, proxy.ts: 9ms, application-code: 42ms)
+✓ Compiled in 42ms
+ GET / 200 in 467ms (next.js: 129ms, application-code: 338ms)
+ GET /admin/settings 200 in 472ms (next.js: 114ms, proxy.ts: 211ms, application-code: 147ms)
+ GET / 200 in 253ms (next.js: 170ms, application-code: 83ms)
+ GET /admin/settings 200 in 52ms (next.js: 5ms, proxy.ts: 9ms, application-code: 37ms)
+✓ Compiled in 134ms
+ GET / 200 in 481ms (next.js: 85ms, application-code: 396ms)
+ GET /admin/settings 200 in 487ms (next.js: 16ms, proxy.ts: 214ms, application-code: 256ms)
+ GET / 200 in 304ms (next.js: 61ms, application-code: 242ms)
+ GET / 200 in 278ms (next.js: 11ms, application-code: 267ms)
+ GET / 200 in 283ms (next.js: 49ms, application-code: 234ms)
+ GET /admin/settings 200 in 301ms (next.js: 12ms, proxy.ts: 123ms, application-code: 166ms)
+ GET / 200 in 220ms (next.js: 6ms, application-code: 214ms)
+ GET / 200 in 219ms (next.js: 8ms, application-code: 211ms)
+ GET / 200 in 188ms (next.js: 8ms, application-code: 180ms)
+ GET /admin/settings 200 in 226ms (next.js: 12ms, proxy.ts: 11ms, application-code: 203ms)
+ GET /admin/settings 200 in 227ms (next.js: 45ms, proxy.ts: 11ms, application-code: 171ms)
+ GET /admin/settings 200 in 223ms (next.js: 45ms, proxy.ts: 46ms, application-code: 132ms)
+ GET /admin/settings 200 in 103ms (next.js: 10ms, proxy.ts: 10ms, application-code: 84ms)
+ GET /admin/settings 200 in 100ms (next.js: 46ms, proxy.ts: 11ms, application-code: 43ms)
+✓ Compiled in 29ms
+ GET / 200 in 584ms (next.js: 97ms, application-code: 487ms)
+ GET /admin/settings 200 in 597ms (next.js: 126ms, proxy.ts: 238ms, application-code: 233ms)
+ GET / 200 in 401ms (next.js: 7ms, application-code: 394ms)
+ GET / 200 in 285ms (next.js: 11ms, application-code: 274ms)
+ GET / 200 in 286ms (next.js: 45ms, application-code: 240ms)
+ GET / 200 in 319ms (next.js: 76ms, application-code: 243ms)
+ GET / 200 in 296ms (next.js: 7ms, application-code: 289ms)
+ GET / 200 in 205ms (next.js: 7ms, application-code: 198ms)
+ GET / 200 in 236ms (next.js: 38ms, application-code: 197ms)
+ GET / 200 in 171ms (next.js: 6ms, application-code: 165ms)
+ GET / 200 in 203ms (next.js: 37ms, application-code: 166ms)
+ GET / 200 in 177ms (next.js: 41ms, application-code: 136ms)
+ GET / 200 in 142ms (next.js: 6ms, application-code: 136ms)
+ GET / 200 in 146ms (next.js: 9ms, application-code: 137ms)
+ GET /admin/settings 200 in 159ms (next.js: 6ms, proxy.ts: 46ms, application-code: 107ms)
+ GET /admin/settings 200 in 242ms (next.js: 8ms, proxy.ts: 8ms, application-code: 226ms)
+ GET /admin/settings 200 in 243ms (next.js: 13ms, proxy.ts: 18ms, application-code: 212ms)
+ GET /admin/settings 200 in 243ms (next.js: 45ms, proxy.ts: 18ms, application-code: 181ms)
+ GET /admin/settings 200 in 243ms (next.js: 77ms, proxy.ts: 18ms, application-code: 148ms)
+ GET /admin/settings 200 in 268ms (next.js: 24ms, proxy.ts: 112ms, application-code: 133ms)
+ GET /admin/settings 200 in 173ms (next.js: 11ms, proxy.ts: 56ms, application-code: 106ms)
+ GET /admin/settings 200 in 229ms (next.js: 9ms, proxy.ts: 9ms, application-code: 211ms)
+ GET /admin/settings 200 in 183ms (next.js: 12ms, proxy.ts: 15ms, application-code: 156ms)
+ GET /admin/settings 200 in 183ms (next.js: 44ms, proxy.ts: 15ms, application-code: 124ms)
+ GET /admin/settings 200 in 184ms (next.js: 77ms, proxy.ts: 15ms, application-code: 91ms)
+ GET /admin/settings 200 in 178ms (next.js: 113ms, proxy.ts: 15ms, application-code: 50ms)
+ GET / 200 in 192ms (next.js: 3ms, application-code: 189ms)
+ GET / 200 in 196ms (next.js: 3ms, application-code: 193ms)
+ GET /admin/login 200 in 69ms (next.js: 13ms, proxy.ts: 2ms, application-code: 54ms)
+ POST /api/admin/login 200 in 62ms (next.js: 48ms, application-code: 14ms)
+ GET /admin/dashboard 200 in 149ms (next.js: 55ms, proxy.ts: 3ms, application-code: 90ms)
+ GET /admin/dashboard 200 in 60ms (next.js: 4ms, proxy.ts: 3ms, application-code: 52ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_188ftk9._.js:2477:13)
+ GET /admin/settings 200 in 86ms (next.js: 5ms, proxy.ts: 3ms, application-code: 78ms)
+ GET / 200 in 146ms (next.js: 5ms, application-code: 142ms)
+ GET / 200 in 135ms (next.js: 5ms, application-code: 130ms)
+✓ Compiled in 71ms
+ GET / 200 in 609ms (next.js: 101ms, application-code: 508ms)
+ GET / 200 in 372ms (next.js: 8ms, application-code: 364ms)
+ GET /admin/settings 200 in 618ms (next.js: 162ms, proxy.ts: 245ms, application-code: 212ms)
+ GET / 200 in 187ms (next.js: 9ms, application-code: 178ms)
+ GET / 200 in 187ms (next.js: 41ms, application-code: 146ms)
+ GET / 200 in 189ms (next.js: 80ms, application-code: 109ms)
+ GET / 200 in 133ms (next.js: 7ms, application-code: 126ms)
+ GET /admin/settings 200 in 124ms (next.js: 6ms, proxy.ts: 11ms, application-code: 106ms)
+ GET /admin/settings 200 in 194ms (next.js: 7ms, proxy.ts: 8ms, application-code: 178ms)
+ GET /admin/settings 200 in 143ms (next.js: 11ms, proxy.ts: 15ms, application-code: 117ms)
+ GET /admin/settings 200 in 142ms (next.js: 74ms, proxy.ts: 14ms, application-code: 54ms)
+ GET /admin/settings 200 in 144ms (next.js: 42ms, proxy.ts: 14ms, application-code: 87ms)
+ GET / 200 in 255ms (next.js: 5ms, application-code: 250ms)
+✓ Compiled in 43ms
+ GET / 200 in 265ms (next.js: 75ms, application-code: 190ms)
+ GET /admin/settings 200 in 267ms (next.js: 17ms, proxy.ts: 199ms, application-code: 51ms)
+ GET / 200 in 259ms (next.js: 5ms, application-code: 254ms)
+ GET / 200 in 155ms (next.js: 5ms, application-code: 150ms)
+ GET / 200 in 154ms (next.js: 5ms, application-code: 149ms)
+✓ Compiled in 26ms
+ GET / 200 in 185ms (next.js: 55ms, application-code: 130ms)
+ GET /admin/settings 200 in 223ms (next.js: 125ms, proxy.ts: 38ms, application-code: 61ms)
+✓ Compiled in 38ms
+ GET / 200 in 163ms (next.js: 52ms, application-code: 112ms)
+ GET /admin/settings 200 in 164ms (next.js: 13ms, proxy.ts: 123ms, application-code: 27ms)
+✓ Compiled in 24ms
+ GET / 200 in 164ms (next.js: 80ms, application-code: 84ms)
+ GET /admin/settings 200 in 320ms (next.js: 101ms, proxy.ts: 34ms, application-code: 185ms)
+✓ Compiled in 39ms
+ GET / 200 in 165ms (next.js: 83ms, application-code: 82ms)
+ GET /admin/settings 200 in 183ms (next.js: 104ms, proxy.ts: 35ms, application-code: 45ms)
+✓ Compiled in 25ms
+ GET / 200 in 163ms (next.js: 51ms, application-code: 112ms)
+ GET /admin/settings 200 in 164ms (next.js: 12ms, proxy.ts: 126ms, application-code: 26ms)
+✓ Compiled in 48ms
+ GET / 200 in 182ms (next.js: 69ms, application-code: 113ms)
+ GET /admin/settings 200 in 75ms (next.js: 10ms, proxy.ts: 38ms, application-code: 27ms)
+⨯ ./Health Booster/health-booster/components/landing/OrderForm.tsx:390:16
+Expected '</', got 'jsx text'
+  [90m388 |[0m             )}
+  [90m389 |[0m           </button>
+[31m[1m>[0m [90m390 |[0m         </form>
+  [90m    |[0m                [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m391 |[0m       </div>
+  [90m    |[0m [31m[1m^^^^^^[0m
+  [90m392 |[0m     </section>
+  [90m393 |[0m   );
+  [90m394 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Health Booster/health-booster/components/landing/OrderForm.tsx
+    ./Health Booster/health-booster/app/page.tsx
+
+
+✓ Compiled in 54ms
+ GET /admin/settings 500 in 677ms (next.js: 547ms, proxy.ts: 34ms, application-code: 96ms)
+ GET / 500 in 676ms (next.js: 669ms, application-code: 7ms)
+⨯ ./Health Booster/health-booster/components/landing/OrderForm.tsx:390:16
+Expected '</', got 'jsx text'
+  [90m388 |[0m             )}
+  [90m389 |[0m           </button>
+[31m[1m>[0m [90m390 |[0m         </form>
+  [90m    |[0m                [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m391 |[0m       </div>
+  [90m    |[0m [31m[1m^^^^^^[0m
+  [90m392 |[0m     </section>
+  [90m393 |[0m   );
+  [90m394 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Health Booster/health-booster/components/landing/OrderForm.tsx
+    ./Health Booster/health-booster/app/page.tsx
+
+
+ GET / 500 in 27ms (next.js: 15ms, application-code: 12ms)
+⨯ ./Health Booster/health-booster/components/landing/OrderForm.tsx:390:16
+Expected '</', got 'jsx text'
+  [90m388 |[0m             )}
+  [90m389 |[0m           </button>
+[31m[1m>[0m [90m390 |[0m         </form>
+  [90m    |[0m                [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m391 |[0m       </div>
+  [90m    |[0m [31m[1m^^^^^^[0m
+  [90m392 |[0m     </section>
+  [90m393 |[0m   );
+  [90m394 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Health Booster/health-booster/components/landing/OrderForm.tsx
+    ./Health Booster/health-booster/app/page.tsx
+
+
+ GET /admin/settings 500 in 45ms (next.js: 31ms, proxy.ts: 4ms, application-code: 10ms)
+⨯ ./Health Booster/health-booster/components/landing/OrderForm.tsx:390:16
+Expected '</', got 'jsx text'
+  [90m388 |[0m             )}
+  [90m389 |[0m           </button>
+[31m[1m>[0m [90m390 |[0m         </form>
+  [90m    |[0m                [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m391 |[0m       </div>
+  [90m    |[0m [31m[1m^^^^^^[0m
+  [90m392 |[0m     </section>
+  [90m393 |[0m   );
+  [90m394 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Health Booster/health-booster/components/landing/OrderForm.tsx
+    ./Health Booster/health-booster/app/page.tsx
+
+
+ GET / 500 in 36ms (next.js: 26ms, application-code: 10ms)
+ GET / 500 in 32ms (next.js: 21ms, application-code: 11ms)
+ GET /admin/settings 500 in 62ms (next.js: 24ms, proxy.ts: 28ms, application-code: 10ms)
+ GET /admin/settings 500 in 46ms (next.js: 21ms, proxy.ts: 18ms, application-code: 7ms)
+[browser] Uncaught Error: ./Health Booster/health-booster/components/landing/OrderForm.tsx:390:16
+Expected '</', got 'jsx text'
+  388 |             )}
+  389 |           </button>
+> 390 |         </form>
+      |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 391 |       </div>
+      | ^^^^^^
+  392 |     </section>
+  393 |   );
+  394 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Health Booster/health-booster/components/landing/OrderForm.tsx
+    ./Health Booster/health-booster/app/page.tsx
+
+
+    at <unknown> (Error: ./Health Booster/health-booster/components/landing/OrderForm.tsx:390:16)
+    at <unknown> (Error: (./Health Booster/health-booster/components/landing/OrderForm.tsx:390:16)
+[browser] Uncaught Error: ./Health Booster/health-booster/components/landing/OrderForm.tsx:390:16
+Expected '</', got 'jsx text'
+  388 |             )}
+  389 |           </button>
+> 390 |         </form>
+      |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 391 |       </div>
+      | ^^^^^^
+  392 |     </section>
+  393 |   );
+  394 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Health Booster/health-booster/components/landing/OrderForm.tsx
+    ./Health Booster/health-booster/app/page.tsx
+
+
+    at <unknown> (Error: ./Health Booster/health-booster/components/landing/OrderForm.tsx:390:16)
+    at <unknown> (Error: (./Health Booster/health-booster/components/landing/OrderForm.tsx:390:16)
+[browser] ./Health Booster/health-booster/components/landing/OrderForm.tsx:390:16
+Expected '</', got 'jsx text'
+  388 |             )}
+  389 |           </button>
+> 390 |         </form>
+      |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 391 |       </div>
+      | ^^^^^^
+  392 |     </section>
+  393 |   );
+  394 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Health Booster/health-booster/components/landing/OrderForm.tsx
+    ./Health Booster/health-booster/app/page.tsx 
+    at handleErrors (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+    at processMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2835:28)
+    at <unknown> (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2680:13)
+    at WebSocket.handleMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2325:17) (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+[browser] ./Health Booster/health-booster/components/landing/OrderForm.tsx:390:16
+Expected '</', got 'jsx text'
+  388 |             )}
+  389 |           </button>
+> 390 |         </form>
+      |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 391 |       </div>
+      | ^^^^^^
+  392 |     </section>
+  393 |   );
+  394 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Health Booster/health-booster/components/landing/OrderForm.tsx
+    ./Health Booster/health-booster/app/page.tsx 
+    at handleErrors (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+    at processMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2835:28)
+    at <unknown> (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2680:13)
+    at WebSocket.handleMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2325:17) (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+[browser] ./Health Booster/health-booster/components/landing/OrderForm.tsx:390:16
+Expected '</', got 'jsx text'
+  388 |             )}
+  389 |           </button>
+> 390 |         </form>
+      |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 391 |       </div>
+      | ^^^^^^
+  392 |     </section>
+  393 |   );
+  394 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Health Booster/health-booster/components/landing/OrderForm.tsx
+    ./Health Booster/health-booster/app/page.tsx 
+    at handleErrors (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+    at processMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2835:28)
+    at <unknown> (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2680:13)
+    at WebSocket.handleMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2325:17) (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+[browser] ./Health Booster/health-booster/components/landing/OrderForm.tsx:390:16
+Expected '</', got 'jsx text'
+  388 |             )}
+  389 |           </button>
+> 390 |         </form>
+      |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 391 |       </div>
+      | ^^^^^^
+  392 |     </section>
+  393 |   );
+  394 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Health Booster/health-booster/components/landing/OrderForm.tsx
+    ./Health Booster/health-booster/app/page.tsx 
+    at handleErrors (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+    at processMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2835:28)
+    at <unknown> (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2680:13)
+    at WebSocket.handleMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2325:17) (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+[browser] ./Health Booster/health-booster/components/landing/OrderForm.tsx:390:16
+Expected '</', got 'jsx text'
+  388 |             )}
+  389 |           </button>
+> 390 |         </form>
+      |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 391 |       </div>
+      | ^^^^^^
+  392 |     </section>
+  393 |   );
+  394 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Health Booster/health-booster/components/landing/OrderForm.tsx
+    ./Health Booster/health-booster/app/page.tsx 
+    at handleErrors (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+    at processMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2835:28)
+    at <unknown> (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2680:13)
+    at WebSocket.handleMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2325:17) (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+[browser] ./Health Booster/health-booster/components/landing/OrderForm.tsx:390:16
+Expected '</', got 'jsx text'
+  388 |             )}
+  389 |           </button>
+> 390 |         </form>
+      |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 391 |       </div>
+      | ^^^^^^
+  392 |     </section>
+  393 |   );
+  394 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./Health Booster/health-booster/components/landing/OrderForm.tsx
+    ./Health Booster/health-booster/app/page.tsx 
+    at handleErrors (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+    at processMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2835:28)
+    at <unknown> (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2680:13)
+    at WebSocket.handleMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2325:17) (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+✓ Compiled in 76ms
+ GET /admin/settings 200 in 554ms (next.js: 17ms, proxy.ts: 213ms, application-code: 323ms)
+ GET / 200 in 554ms (next.js: 95ms, application-code: 459ms)
+ GET / 200 in 271ms (next.js: 5ms, application-code: 266ms)
+✓ Compiled in 46ms
+✓ Compiled in 24ms
+ GET /admin/settings 200 in 290ms (next.js: 129ms, proxy.ts: 40ms, application-code: 122ms)
+ GET / 200 in 99ms (next.js: 9ms, application-code: 90ms)
+ GET / 200 in 254ms (next.js: 58ms, application-code: 196ms)
+ GET /admin/settings 200 in 98ms (next.js: 8ms, proxy.ts: 45ms, application-code: 45ms)
+ GET / 200 in 227ms (next.js: 66ms, application-code: 161ms)
+ GET /admin/settings 200 in 231ms (next.js: 35ms, proxy.ts: 141ms, application-code: 55ms)
+ GET / 200 in 85ms (next.js: 4ms, application-code: 81ms)
+ GET /admin/settings 200 in 33ms (next.js: 4ms, proxy.ts: 5ms, application-code: 23ms)
+✓ Compiled in 88ms
+ GET / 200 in 331ms (next.js: 117ms, application-code: 215ms)
+ GET /admin/settings 200 in 338ms (next.js: 14ms, proxy.ts: 164ms, application-code: 160ms)
+ GET / 200 in 172ms (next.js: 32ms, application-code: 140ms)
+ GET / 200 in 161ms (next.js: 4ms, application-code: 157ms)
+ GET / 200 in 161ms (next.js: 24ms, application-code: 137ms)
+ GET /admin/settings 200 in 169ms (next.js: 13ms, proxy.ts: 83ms, application-code: 73ms)
+ GET / 200 in 145ms (next.js: 4ms, application-code: 141ms)
+ GET / 200 in 127ms (next.js: 4ms, application-code: 122ms)
+ GET /admin/settings 200 in 128ms (next.js: 8ms, proxy.ts: 28ms, application-code: 92ms)
+ GET /admin/settings 200 in 103ms (next.js: 28ms, proxy.ts: 7ms, application-code: 69ms)
+ GET /admin/settings 200 in 103ms (next.js: 28ms, proxy.ts: 26ms, application-code: 49ms)
+ GET /admin/settings 200 in 98ms (next.js: 26ms, proxy.ts: 45ms, application-code: 26ms)
+ GET / 200 in 346ms (next.js: 5ms, application-code: 341ms)
+✓ Compiled in 41ms
+⨯ ReferenceError: TestimonialsSection is not defined
+    at HomePage (app\page.tsx:72:8)
+  70 |       />
+  71 |       <ProblemSection />
+> 72 |       <TestimonialsSection />
+     |        ^
+  73 |       <BenefitsSection />
+  74 |       <ProductDetails />
+  75 |       <PricingSection packages={packages} /> {
+  digest: '134894286'
+}
+⨯ ReferenceError: TestimonialsSection is not defined
+    at HomePage (app\page.tsx:72:8)
+  70 |       />
+  71 |       <ProblemSection />
+> 72 |       <TestimonialsSection />
+     |        ^
+  73 |       <BenefitsSection />
+  74 |       <ProductDetails />
+  75 |       <PricingSection packages={packages} /> {
+  digest: '134894286'
+}
+⨯ ReferenceError: TestimonialsSection is not defined
+    at HomePage (app\page.tsx:72:8)
+  70 |       />
+  71 |       <ProblemSection />
+> 72 |       <TestimonialsSection />
+     |        ^
+  73 |       <BenefitsSection />
+  74 |       <ProductDetails />
+  75 |       <PricingSection packages={packages} /> {
+  digest: '134894286'
+}
+ GET / 200 in 312ms (next.js: 89ms, application-code: 223ms)
+⨯ ReferenceError: TestimonialsSection is not defined
+    at HomePage (app\page.tsx:72:8)
+  70 |       />
+  71 |       <ProblemSection />
+> 72 |       <TestimonialsSection />
+     |        ^
+  73 |       <BenefitsSection />
+  74 |       <ProductDetails />
+  75 |       <PricingSection packages={packages} /> {
+  digest: '134894286'
+}
+ GET / 200 in 195ms (next.js: 83ms, application-code: 112ms)
+⨯ ReferenceError: TestimonialsSection is not defined
+    at HomePage (app\page.tsx:72:8)
+  70 |       />
+  71 |       <ProblemSection />
+> 72 |       <TestimonialsSection />
+     |        ^
+  73 |       <BenefitsSection />
+  74 |       <ProductDetails />
+  75 |       <PricingSection packages={packages} /> {
+  digest: '134894286'
+}
+ GET / 200 in 105ms (next.js: 6ms, application-code: 100ms)
+ GET /admin/settings 200 in 365ms (next.js: 19ms, proxy.ts: 141ms, application-code: 205ms)
+ GET / 200 in 106ms (next.js: 24ms, application-code: 81ms)
+⨯ ReferenceError: TestimonialsSection is not defined
+    at HomePage (app\page.tsx:72:8)
+  70 |       />
+  71 |       <ProblemSection />
+> 72 |       <TestimonialsSection />
+     |        ^
+  73 |       <BenefitsSection />
+  74 |       <ProductDetails />
+  75 |       <PricingSection packages={packages} /> {
+  digest: '134894286'
+}
+⨯ ReferenceError: TestimonialsSection is not defined
+    at HomePage (app\page.tsx:72:8)
+  70 |       />
+  71 |       <ProblemSection />
+> 72 |       <TestimonialsSection />
+     |        ^
+  73 |       <BenefitsSection />
+  74 |       <ProductDetails />
+  75 |       <PricingSection packages={packages} /> {
+  digest: '134894286'
+}
+ GET /admin/settings 200 in 174ms (next.js: 9ms, proxy.ts: 60ms, application-code: 105ms)
+ GET / 200 in 86ms (next.js: 6ms, application-code: 79ms)
+ GET / 200 in 108ms (next.js: 5ms, application-code: 103ms)
+ GET / 200 in 86ms (next.js: 5ms, application-code: 81ms)
+ GET /admin/settings 200 in 176ms (next.js: 6ms, proxy.ts: 30ms, application-code: 140ms)
+ GET /admin/settings 200 in 176ms (next.js: 26ms, proxy.ts: 29ms, application-code: 120ms)
+ GET /admin/settings 200 in 104ms (next.js: 7ms, proxy.ts: 11ms, application-code: 86ms)
+ GET /admin/settings 200 in 102ms (next.js: 27ms, proxy.ts: 9ms, application-code: 65ms)
+ GET /admin/settings 200 in 95ms (next.js: 15ms, proxy.ts: 51ms, application-code: 30ms)
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  [90m18 |[0m [36mimport[0m [33mStickyOrderButton[0m [36mfrom[0m [32m"@/components/landing/StickyOrderButton"[0m;
+  [90m19 |[0m [36mimport[0m [33mFloatingCTA[0m [36mfrom[0m [32m"@/components/landing/FloatingCTA"[0m;
+[31m[1m>[0m [90m20 |[0m [36mimport[0m [33mCelebrityEndorsement[0m [36mfrom[0m [32m"@/components/landing/CelebrityEndorsement"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m21 |[0m
+  [90m22 |[0m [36masync[0m [36mfunction[0m getPageData() {
+  [90m23 |[0m   [36mconst[0m [siteSettings, paymentSettings, packages] = [36mawait[0m [33mPromise[0m.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET / 500 in 55ms (next.js: 13ms, application-code: 42ms)
+ GET /admin/settings 500 in 65ms (next.js: 9ms, proxy.ts: 47ms, application-code: 8ms)
+ GET /admin/settings 500 in 24ms (next.js: 11ms, proxy.ts: 4ms, application-code: 9ms)
+[browser] Uncaught Error: ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  18 | import StickyOrderButton from "@/components/landing/StickyOrderButton";
+  19 | import FloatingCTA from "@/components/landing/FloatingCTA";
+> 20 | import CelebrityEndorsement from "@/components/landing/CelebrityEndorsement";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | async function getPageData() {
+  23 |   const [siteSettings, paymentSettings, packages] = await Promise.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./Health Booster/health-booster/app/page.tsx:20:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./Health Booster/health-booster/app/page.tsx:20:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] Uncaught Error: ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  18 | import StickyOrderButton from "@/components/landing/StickyOrderButton";
+  19 | import FloatingCTA from "@/components/landing/FloatingCTA";
+> 20 | import CelebrityEndorsement from "@/components/landing/CelebrityEndorsement";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | async function getPageData() {
+  23 |   const [siteSettings, paymentSettings, packages] = await Promise.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./Health Booster/health-booster/app/page.tsx:20:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./Health Booster/health-booster/app/page.tsx:20:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+✓ Compiled in 148ms
+[browser] ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  18 | import StickyOrderButton from "@/components/landing/StickyOrderButton";
+  19 | import FloatingCTA from "@/components/landing/FloatingCTA";
+> 20 | import CelebrityEndorsement from "@/components/landing/CelebrityEndorsement";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | async function getPageData() {
+  23 |   const [siteSettings, paymentSettings, packages] = await Promise.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+    at processMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2835:28)
+    at <unknown> (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2680:13)
+    at WebSocket.handleMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2325:17) (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+[browser] ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  18 | import StickyOrderButton from "@/components/landing/StickyOrderButton";
+  19 | import FloatingCTA from "@/components/landing/FloatingCTA";
+> 20 | import CelebrityEndorsement from "@/components/landing/CelebrityEndorsement";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | async function getPageData() {
+  23 |   const [siteSettings, paymentSettings, packages] = await Promise.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+    at processMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2835:28)
+    at <unknown> (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2680:13)
+    at WebSocket.handleMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2325:17) (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+[browser] ./Health Booster/health-booster/app/page.tsx:20:1
+Module not found: Can't resolve '@/components/landing/CelebrityEndorsement'
+  18 | import StickyOrderButton from "@/components/landing/StickyOrderButton";
+  19 | import FloatingCTA from "@/components/landing/FloatingCTA";
+> 20 | import CelebrityEndorsement from "@/components/landing/CelebrityEndorsement";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  21 |
+  22 | async function getPageData() {
+  23 |   const [siteSettings, paymentSettings, packages] = await Promise.all([
+
+Import map: aliased to relative './components/landing/CelebrityEndorsement' inside of [project]/Health Booster/health-booster
+
+https://nextjs.org/docs/messages/module-not-found 
+    at handleErrors (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+    at processMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2835:28)
+    at <unknown> (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2680:13)
+    at WebSocket.handleMessage (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2325:17) (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_client_1c3klh8._.js:2774:21)
+ GET /admin/settings 200 in 629ms (next.js: 184ms, proxy.ts: 260ms, application-code: 185ms)
+ GET / 200 in 574ms (next.js: 15ms, application-code: 559ms)
+ GET / 200 in 262ms (next.js: 5ms, application-code: 257ms)
+ GET /admin/dashboard 200 in 134ms (next.js: 31ms, proxy.ts: 6ms, application-code: 97ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_188ftk9._.js:2477:13)
+ GET /admin/orders 200 in 198ms (next.js: 96ms, proxy.ts: 7ms, application-code: 96ms)
+ GET /admin/orders?status=Confirmed 200 in 49ms (next.js: 6ms, proxy.ts: 6ms, application-code: 38ms)
+ GET /admin/orders 200 in 45ms (next.js: 5ms, proxy.ts: 5ms, application-code: 35ms)
+✓ Compiled in 49ms
+ GET / 200 in 754ms (next.js: 285ms, application-code: 469ms)
+ GET /admin/orders 200 in 909ms (next.js: 182ms, proxy.ts: 64ms, application-code: 662ms)
+ GET / 200 in 404ms (next.js: 13ms, application-code: 391ms)
+ GET / 200 in 229ms (next.js: 42ms, application-code: 187ms)
+ GET / 200 in 230ms (next.js: 8ms, application-code: 222ms)
+ GET /admin/orders 200 in 491ms (next.js: 91ms, proxy.ts: 216ms, application-code: 184ms)
+ GET / 200 in 260ms (next.js: 6ms, application-code: 254ms)
+ GET / 200 in 261ms (next.js: 39ms, application-code: 222ms)
+ GET / 200 in 219ms (next.js: 7ms, application-code: 212ms)
+ GET / 200 in 228ms (next.js: 7ms, application-code: 221ms)
+ GET / 200 in 262ms (next.js: 41ms, application-code: 221ms)
+ GET / 200 in 231ms (next.js: 43ms, application-code: 188ms)
+ GET / 200 in 284ms (next.js: 5ms, application-code: 278ms)
+ GET / 200 in 285ms (next.js: 39ms, application-code: 246ms)
+ GET / 200 in 207ms (next.js: 6ms, application-code: 201ms)
+ GET /admin/orders 200 in 289ms (next.js: 14ms, proxy.ts: 20ms, application-code: 256ms)
+ GET /admin/orders 200 in 325ms (next.js: 51ms, proxy.ts: 16ms, application-code: 259ms)
+ GET /admin/orders 200 in 326ms (next.js: 81ms, proxy.ts: 15ms, application-code: 230ms)
+ GET /admin/orders 200 in 348ms (next.js: 70ms, proxy.ts: 13ms, application-code: 265ms)
+ GET /admin/orders 200 in 351ms (next.js: 13ms, proxy.ts: 13ms, application-code: 325ms)
+ GET /admin/orders 200 in 346ms (next.js: 25ms, proxy.ts: 101ms, application-code: 220ms)
+ GET /admin/orders 200 in 280ms (next.js: 13ms, proxy.ts: 20ms, application-code: 247ms)
+ GET /admin/orders 200 in 271ms (next.js: 53ms, proxy.ts: 14ms, application-code: 204ms)
+ GET /admin/orders 200 in 266ms (next.js: 102ms, proxy.ts: 11ms, application-code: 153ms)
+ GET /admin/orders 200 in 110ms (next.js: 8ms, proxy.ts: 10ms, application-code: 92ms)
+ GET /admin/orders 200 in 110ms (next.js: 39ms, proxy.ts: 10ms, application-code: 61ms)
+ GET / 200 in 272ms (next.js: 57ms, application-code: 216ms)
+ GET / 200 in 141ms (next.js: 5ms, application-code: 137ms)
+ GET /admin/orders 200 in 299ms (next.js: 41ms, proxy.ts: 135ms, application-code: 122ms)
+ GET / 200 in 142ms (next.js: 44ms, application-code: 99ms)
+ GET / 200 in 142ms (next.js: 62ms, application-code: 80ms)
+ GET / 200 in 237ms (next.js: 81ms, application-code: 156ms)
+ GET / 200 in 148ms (next.js: 4ms, application-code: 144ms)
+ GET / 200 in 126ms (next.js: 6ms, application-code: 120ms)
+ GET / 200 in 122ms (next.js: 5ms, application-code: 117ms)
+ GET / 200 in 121ms (next.js: 22ms, application-code: 99ms)
+ GET / 200 in 122ms (next.js: 41ms, application-code: 82ms)
+ GET / 200 in 138ms (next.js: 3ms, application-code: 135ms)
+ GET / 200 in 138ms (next.js: 4ms, application-code: 134ms)
+ GET / 200 in 117ms (next.js: 4ms, application-code: 113ms)
+ GET / 200 in 119ms (next.js: 6ms, application-code: 113ms)
+ GET / 200 in 118ms (next.js: 22ms, application-code: 96ms)
+ GET / 200 in 100ms (next.js: 25ms, application-code: 75ms)
+ GET / 200 in 144ms (next.js: 4ms, application-code: 140ms)
+ GET / 200 in 143ms (next.js: 4ms, application-code: 139ms)
+ GET / 200 in 120ms (next.js: 4ms, application-code: 116ms)
+ GET / 200 in 119ms (next.js: 5ms, application-code: 114ms)
+ GET / 200 in 102ms (next.js: 10ms, application-code: 92ms)
+ GET / 200 in 97ms (next.js: 25ms, application-code: 72ms)
+ GET / 200 in 137ms (next.js: 3ms, application-code: 134ms)
+ GET / 200 in 137ms (next.js: 4ms, application-code: 133ms)
+ GET / 200 in 116ms (next.js: 4ms, application-code: 112ms)
+ GET / 200 in 135ms (next.js: 22ms, application-code: 112ms)
+ GET / 200 in 98ms (next.js: 6ms, application-code: 92ms)
+ GET / 200 in 96ms (next.js: 23ms, application-code: 74ms)
+ GET / 200 in 145ms (next.js: 3ms, application-code: 142ms)
+ GET / 200 in 147ms (next.js: 4ms, application-code: 143ms)
+ GET / 200 in 126ms (next.js: 4ms, application-code: 121ms)
+ GET / 200 in 143ms (next.js: 23ms, application-code: 121ms)
+ GET / 200 in 127ms (next.js: 29ms, application-code: 97ms)
+ GET / 200 in 82ms (next.js: 6ms, application-code: 76ms)
+ GET / 200 in 141ms (next.js: 3ms, application-code: 138ms)
+ GET / 200 in 139ms (next.js: 4ms, application-code: 135ms)
+ GET / 200 in 117ms (next.js: 4ms, application-code: 113ms)
+ GET / 200 in 135ms (next.js: 24ms, application-code: 111ms)
+ GET / 200 in 135ms (next.js: 43ms, application-code: 93ms)
+ GET / 200 in 77ms (next.js: 4ms, application-code: 73ms)
+ GET / 200 in 125ms (next.js: 3ms, application-code: 121ms)
+ GET / 200 in 109ms (next.js: 3ms, application-code: 105ms)
+ GET / 200 in 110ms (next.js: 5ms, application-code: 105ms)
+ GET / 200 in 110ms (next.js: 28ms, application-code: 82ms)
+ GET /admin/orders 200 in 159ms (next.js: 5ms, proxy.ts: 52ms, application-code: 103ms)
+ GET /admin/orders 200 in 145ms (next.js: 5ms, proxy.ts: 7ms, application-code: 134ms)
+ GET /admin/orders 200 in 149ms (next.js: 24ms, proxy.ts: 10ms, application-code: 116ms)
+ GET /admin/orders 200 in 150ms (next.js: 8ms, proxy.ts: 10ms, application-code: 133ms)
+ GET /admin/orders 200 in 172ms (next.js: 13ms, proxy.ts: 45ms, application-code: 115ms)
+ GET /admin/orders 200 in 172ms (next.js: 29ms, proxy.ts: 48ms, application-code: 96ms)
+ GET /admin/orders 200 in 172ms (next.js: 8ms, proxy.ts: 48ms, application-code: 115ms)
+ GET /admin/orders 200 in 154ms (next.js: 6ms, proxy.ts: 9ms, application-code: 139ms)
+ GET /admin/orders 200 in 147ms (next.js: 9ms, proxy.ts: 11ms, application-code: 127ms)
+ GET /admin/orders 200 in 147ms (next.js: 26ms, proxy.ts: 10ms, application-code: 110ms)
+ GET /admin/orders 200 in 162ms (next.js: 13ms, proxy.ts: 47ms, application-code: 102ms)
+ GET /admin/orders 200 in 162ms (next.js: 27ms, proxy.ts: 51ms, application-code: 84ms)
+ GET /admin/orders 200 in 155ms (next.js: 8ms, proxy.ts: 45ms, application-code: 103ms)
+ GET /admin/orders 200 in 143ms (next.js: 5ms, proxy.ts: 4ms, application-code: 134ms)
+ GET /admin/orders 200 in 143ms (next.js: 24ms, proxy.ts: 8ms, application-code: 111ms)
+ GET /admin/orders 200 in 144ms (next.js: 8ms, proxy.ts: 8ms, application-code: 128ms)
+ GET /admin/orders 200 in 161ms (next.js: 11ms, proxy.ts: 45ms, application-code: 105ms)
+ GET /admin/orders 200 in 161ms (next.js: 27ms, proxy.ts: 48ms, application-code: 86ms)
+ GET /admin/orders 200 in 156ms (next.js: 7ms, proxy.ts: 51ms, application-code: 98ms)
+ GET /admin/orders 200 in 137ms (next.js: 5ms, proxy.ts: 6ms, application-code: 126ms)
+ GET /admin/orders 200 in 136ms (next.js: 7ms, proxy.ts: 8ms, application-code: 121ms)
+ GET /admin/orders 200 in 136ms (next.js: 23ms, proxy.ts: 8ms, application-code: 105ms)
+ GET /admin/orders 200 in 154ms (next.js: 11ms, proxy.ts: 44ms, application-code: 100ms)
+ GET /admin/orders 200 in 155ms (next.js: 26ms, proxy.ts: 47ms, application-code: 82ms)
+ GET /admin/orders 200 in 156ms (next.js: 7ms, proxy.ts: 44ms, application-code: 105ms)
+ GET /admin/orders 200 in 151ms (next.js: 5ms, proxy.ts: 6ms, application-code: 140ms)
+ GET /admin/orders 200 in 149ms (next.js: 28ms, proxy.ts: 9ms, application-code: 112ms)
+ GET /admin/orders 200 in 150ms (next.js: 12ms, proxy.ts: 10ms, application-code: 129ms)
+ GET /admin/orders 200 in 167ms (next.js: 12ms, proxy.ts: 50ms, application-code: 106ms)
+ GET /admin/orders 200 in 166ms (next.js: 33ms, proxy.ts: 52ms, application-code: 80ms)
+ GET /admin/orders 200 in 156ms (next.js: 7ms, proxy.ts: 52ms, application-code: 97ms)
+ GET /admin/orders 200 in 141ms (next.js: 5ms, proxy.ts: 6ms, application-code: 131ms)
+ GET /admin/orders 200 in 141ms (next.js: 7ms, proxy.ts: 9ms, application-code: 125ms)
+ GET /admin/orders 200 in 141ms (next.js: 23ms, proxy.ts: 9ms, application-code: 109ms)
+ GET /admin/orders 200 in 156ms (next.js: 11ms, proxy.ts: 43ms, application-code: 102ms)
+ GET /admin/orders 200 in 157ms (next.js: 27ms, proxy.ts: 45ms, application-code: 84ms)
+ GET /admin/orders 200 in 151ms (next.js: 6ms, proxy.ts: 49ms, application-code: 96ms)
+ GET /admin/orders 200 in 134ms (next.js: 4ms, proxy.ts: 6ms, application-code: 124ms)
+ GET /admin/orders 200 in 130ms (next.js: 22ms, proxy.ts: 7ms, application-code: 100ms)
+ GET /admin/orders 200 in 131ms (next.js: 7ms, proxy.ts: 8ms, application-code: 116ms)
+ GET /admin/orders 200 in 124ms (next.js: 12ms, proxy.ts: 42ms, application-code: 71ms)
+ GET /admin/orders 200 in 123ms (next.js: 26ms, proxy.ts: 45ms, application-code: 52ms)
+ GET /admin/orders 200 in 77ms (next.js: 8ms, proxy.ts: 44ms, application-code: 25ms)
+ GET / 200 in 332ms (next.js: 57ms, application-code: 275ms)
+ GET / 200 in 201ms (next.js: 5ms, application-code: 196ms)
+ GET /admin/orders 200 in 353ms (next.js: 47ms, proxy.ts: 132ms, application-code: 174ms)
+ GET / 200 in 193ms (next.js: 122ms, application-code: 71ms)
+ GET / 200 in 194ms (next.js: 103ms, application-code: 91ms)
+ GET / 200 in 193ms (next.js: 139ms, application-code: 55ms)
+ GET / 200 in 141ms (next.js: 4ms, application-code: 137ms)
+ GET / 200 in 120ms (next.js: 5ms, application-code: 115ms)
+ GET / 200 in 119ms (next.js: 5ms, application-code: 114ms)
+ GET / 200 in 119ms (next.js: 43ms, application-code: 76ms)
+ GET / 200 in 119ms (next.js: 23ms, application-code: 96ms)
+ GET / 200 in 119ms (next.js: 62ms, application-code: 57ms)
+ GET / 200 in 140ms (next.js: 5ms, application-code: 135ms)
+ GET / 200 in 118ms (next.js: 4ms, application-code: 114ms)
+ GET / 200 in 115ms (next.js: 59ms, application-code: 57ms)
+ GET / 200 in 117ms (next.js: 4ms, application-code: 113ms)
+ GET / 200 in 117ms (next.js: 23ms, application-code: 94ms)
+ GET / 200 in 117ms (next.js: 41ms, application-code: 76ms)
+ GET / 200 in 136ms (next.js: 5ms, application-code: 131ms)
+ GET / 200 in 113ms (next.js: 4ms, application-code: 109ms)
+ GET / 200 in 116ms (next.js: 6ms, application-code: 110ms)
+ GET / 200 in 116ms (next.js: 42ms, application-code: 74ms)
+ GET / 200 in 116ms (next.js: 24ms, application-code: 92ms)
+ GET / 200 in 115ms (next.js: 59ms, application-code: 56ms)
+ GET / 200 in 145ms (next.js: 4ms, application-code: 141ms)
+ GET / 200 in 122ms (next.js: 5ms, application-code: 117ms)
+ GET / 200 in 142ms (next.js: 24ms, application-code: 118ms)
+ GET / 200 in 124ms (next.js: 24ms, application-code: 100ms)
+ GET / 200 in 124ms (next.js: 42ms, application-code: 82ms)
+ GET / 200 in 105ms (next.js: 42ms, application-code: 62ms)
+ GET / 200 in 137ms (next.js: 4ms, application-code: 133ms)
+ GET / 200 in 114ms (next.js: 4ms, application-code: 109ms)
+ GET / 200 in 113ms (next.js: 23ms, application-code: 91ms)
+ GET / 200 in 113ms (next.js: 25ms, application-code: 87ms)
+ GET / 200 in 113ms (next.js: 43ms, application-code: 70ms)
+ GET / 200 in 94ms (next.js: 41ms, application-code: 53ms)
+ GET / 200 in 146ms (next.js: 4ms, application-code: 142ms)
+ GET / 200 in 123ms (next.js: 5ms, application-code: 118ms)
+ GET / 200 in 123ms (next.js: 23ms, application-code: 99ms)
+ GET / 200 in 122ms (next.js: 24ms, application-code: 98ms)
+ GET / 200 in 101ms (next.js: 43ms, application-code: 58ms)
+ GET / 200 in 123ms (next.js: 44ms, application-code: 79ms)
+ GET / 200 in 138ms (next.js: 4ms, application-code: 134ms)
+ GET / 200 in 116ms (next.js: 5ms, application-code: 111ms)
+ GET / 200 in 115ms (next.js: 22ms, application-code: 93ms)
+ GET / 200 in 115ms (next.js: 40ms, application-code: 75ms)
+ GET / 200 in 115ms (next.js: 59ms, application-code: 57ms)
+ GET /admin/orders 200 in 140ms (next.js: 4ms, proxy.ts: 85ms, application-code: 50ms)
+ GET /admin/orders 200 in 168ms (next.js: 4ms, proxy.ts: 5ms, application-code: 159ms)
+ GET /admin/orders 200 in 147ms (next.js: 6ms, proxy.ts: 12ms, application-code: 129ms)
+ GET /admin/orders 200 in 146ms (next.js: 39ms, proxy.ts: 11ms, application-code: 96ms)
+ GET /admin/orders 200 in 146ms (next.js: 56ms, proxy.ts: 11ms, application-code: 79ms)
+ GET /admin/orders 200 in 147ms (next.js: 22ms, proxy.ts: 12ms, application-code: 113ms)
+ GET /admin/orders 200 in 166ms (next.js: 86ms, proxy.ts: 10ms, application-code: 71ms)
+ GET /admin/orders 200 in 159ms (next.js: 6ms, proxy.ts: 4ms, application-code: 148ms)
+ GET /admin/orders 200 in 135ms (next.js: 9ms, proxy.ts: 12ms, application-code: 114ms)
+ GET /admin/orders 200 in 134ms (next.js: 43ms, proxy.ts: 12ms, application-code: 79ms)
+ GET /admin/orders 200 in 135ms (next.js: 27ms, proxy.ts: 12ms, application-code: 96ms)
+ GET /admin/orders 200 in 134ms (next.js: 60ms, proxy.ts: 12ms, application-code: 63ms)
+ GET /admin/orders 200 in 150ms (next.js: 83ms, proxy.ts: 9ms, application-code: 58ms)
+ GET /admin/orders 200 in 161ms (next.js: 7ms, proxy.ts: 3ms, application-code: 151ms)
+ GET /admin/orders 200 in 140ms (next.js: 15ms, proxy.ts: 11ms, application-code: 114ms)
+ GET /admin/orders 200 in 137ms (next.js: 41ms, proxy.ts: 16ms, application-code: 80ms)
+ GET /admin/orders 200 in 138ms (next.js: 26ms, proxy.ts: 16ms, application-code: 96ms)
+ GET /admin/orders 200 in 137ms (next.js: 57ms, proxy.ts: 16ms, application-code: 64ms)
+ GET /admin/orders 200 in 136ms (next.js: 83ms, proxy.ts: 14ms, application-code: 38ms)
+ GET /admin/orders 200 in 156ms (next.js: 6ms, proxy.ts: 3ms, application-code: 146ms)
+ GET /admin/orders 200 in 136ms (next.js: 8ms, proxy.ts: 11ms, application-code: 116ms)
+ GET /admin/orders 200 in 133ms (next.js: 24ms, proxy.ts: 10ms, application-code: 99ms)
+ GET /admin/orders 200 in 132ms (next.js: 70ms, proxy.ts: 9ms, application-code: 52ms)
+ GET /admin/orders 200 in 133ms (next.js: 39ms, proxy.ts: 10ms, application-code: 84ms)
+ GET /admin/orders 200 in 133ms (next.js: 55ms, proxy.ts: 10ms, application-code: 69ms)
+ GET /admin/orders 200 in 152ms (next.js: 8ms, proxy.ts: 3ms, application-code: 141ms)
+ GET /admin/orders 200 in 129ms (next.js: 21ms, proxy.ts: 12ms, application-code: 96ms)
+ GET /admin/orders 200 in 129ms (next.js: 6ms, proxy.ts: 12ms, application-code: 112ms)
+ GET /admin/orders 200 in 128ms (next.js: 52ms, proxy.ts: 11ms, application-code: 65ms)
+ GET /admin/orders 200 in 129ms (next.js: 36ms, proxy.ts: 11ms, application-code: 81ms)
+ GET /admin/orders 200 in 129ms (next.js: 79ms, proxy.ts: 10ms, application-code: 40ms)
+ GET /admin/orders 200 in 160ms (next.js: 8ms, proxy.ts: 4ms, application-code: 148ms)
+ GET /admin/orders 200 in 157ms (next.js: 22ms, proxy.ts: 29ms, application-code: 105ms)
+ GET /admin/orders 200 in 158ms (next.js: 7ms, proxy.ts: 30ms, application-code: 121ms)
+ GET /admin/orders 200 in 139ms (next.js: 59ms, proxy.ts: 11ms, application-code: 69ms)
+ GET /admin/orders 200 in 140ms (next.js: 43ms, proxy.ts: 11ms, application-code: 86ms)
+ GET /admin/orders 200 in 138ms (next.js: 88ms, proxy.ts: 9ms, application-code: 40ms)
+ GET /admin/orders 200 in 153ms (next.js: 9ms, proxy.ts: 4ms, application-code: 141ms)
+ GET /admin/orders 200 in 151ms (next.js: 9ms, proxy.ts: 29ms, application-code: 114ms)
+ GET /admin/orders 200 in 151ms (next.js: 26ms, proxy.ts: 30ms, application-code: 96ms)
+ GET /admin/orders 200 in 132ms (next.js: 44ms, proxy.ts: 11ms, application-code: 76ms)
+ GET /admin/orders 200 in 132ms (next.js: 60ms, proxy.ts: 11ms, application-code: 61ms)
+ GET /admin/orders 200 in 130ms (next.js: 82ms, proxy.ts: 9ms, application-code: 38ms)
+ GET /admin/orders 200 in 63ms (next.js: 6ms, proxy.ts: 5ms, application-code: 52ms)
+ GET /admin/orders 200 in 57ms (next.js: 4ms, proxy.ts: 30ms, application-code: 23ms)
+ GET / 200 in 266ms (next.js: 56ms, application-code: 210ms)
+ GET / 200 in 138ms (next.js: 4ms, application-code: 134ms)
+ GET /admin/orders 200 in 288ms (next.js: 40ms, proxy.ts: 129ms, application-code: 119ms)
+ GET / 200 in 136ms (next.js: 77ms, application-code: 59ms)
+ GET / 200 in 137ms (next.js: 60ms, application-code: 77ms)
+ GET / 200 in 138ms (next.js: 43ms, application-code: 95ms)
+ GET / 200 in 133ms (next.js: 3ms, application-code: 129ms)
+ GET / 200 in 113ms (next.js: 4ms, application-code: 108ms)
+ GET / 200 in 112ms (next.js: 4ms, application-code: 108ms)
+ GET / 200 in 112ms (next.js: 40ms, application-code: 73ms)
+ GET / 200 in 113ms (next.js: 21ms, application-code: 92ms)
+ GET / 200 in 113ms (next.js: 58ms, application-code: 55ms)
+ GET / 200 in 143ms (next.js: 4ms, application-code: 139ms)
+ GET / 200 in 122ms (next.js: 4ms, application-code: 118ms)
+ GET / 200 in 123ms (next.js: 5ms, application-code: 118ms)
+ GET / 200 in 122ms (next.js: 23ms, application-code: 99ms)
+ GET / 200 in 122ms (next.js: 41ms, application-code: 81ms)
+ GET / 200 in 122ms (next.js: 60ms, application-code: 62ms)
+ GET / 200 in 136ms (next.js: 4ms, application-code: 132ms)
+ GET / 200 in 115ms (next.js: 5ms, application-code: 110ms)
+ GET / 200 in 113ms (next.js: 4ms, application-code: 109ms)
+ GET / 200 in 113ms (next.js: 22ms, application-code: 91ms)
+ GET / 200 in 113ms (next.js: 40ms, application-code: 73ms)
+ GET / 200 in 113ms (next.js: 59ms, application-code: 54ms)
+ GET / 200 in 143ms (next.js: 4ms, application-code: 138ms)
+ GET / 200 in 120ms (next.js: 4ms, application-code: 116ms)
+ GET / 200 in 121ms (next.js: 6ms, application-code: 115ms)
+ GET / 200 in 121ms (next.js: 24ms, application-code: 97ms)
+ GET / 200 in 120ms (next.js: 41ms, application-code: 79ms)
+ GET / 200 in 120ms (next.js: 59ms, application-code: 60ms)
+ GET / 200 in 139ms (next.js: 4ms, application-code: 135ms)
+ GET / 200 in 117ms (next.js: 4ms, application-code: 113ms)
+ GET / 200 in 120ms (next.js: 6ms, application-code: 114ms)
+ GET / 200 in 120ms (next.js: 24ms, application-code: 96ms)
+ GET / 200 in 118ms (next.js: 41ms, application-code: 78ms)
+ GET / 200 in 118ms (next.js: 59ms, application-code: 59ms)
+ GET / 200 in 144ms (next.js: 4ms, application-code: 140ms)
+ GET / 200 in 121ms (next.js: 5ms, application-code: 116ms)
+ GET / 200 in 119ms (next.js: 41ms, application-code: 78ms)
+ GET / 200 in 121ms (next.js: 23ms, application-code: 98ms)
+ GET / 200 in 122ms (next.js: 6ms, application-code: 116ms)
+ GET / 200 in 120ms (next.js: 59ms, application-code: 61ms)
+ GET / 200 in 136ms (next.js: 4ms, application-code: 132ms)
+ GET / 200 in 114ms (next.js: 4ms, application-code: 110ms)
+ GET / 200 in 116ms (next.js: 6ms, application-code: 110ms)
+ GET / 200 in 116ms (next.js: 24ms, application-code: 92ms)
+ GET / 200 in 116ms (next.js: 42ms, application-code: 74ms)
+ GET / 200 in 116ms (next.js: 59ms, application-code: 57ms)
+ GET / 200 in 80ms (next.js: 4ms, application-code: 76ms)
+ GET /admin/orders 200 in 137ms (next.js: 4ms, proxy.ts: 5ms, application-code: 128ms)
+ GET /admin/orders 200 in 146ms (next.js: 4ms, proxy.ts: 6ms, application-code: 136ms)
+ GET /admin/orders 200 in 148ms (next.js: 22ms, proxy.ts: 16ms, application-code: 110ms)
+ GET /admin/orders 200 in 149ms (next.js: 6ms, proxy.ts: 16ms, application-code: 127ms)
+ GET /admin/orders 200 in 149ms (next.js: 39ms, proxy.ts: 16ms, application-code: 94ms)
+ GET /admin/orders 200 in 166ms (next.js: 64ms, proxy.ts: 14ms, application-code: 88ms)
+ GET /admin/orders 200 in 141ms (next.js: 6ms, proxy.ts: 6ms, application-code: 129ms)
+ GET /admin/orders 200 in 148ms (next.js: 5ms, proxy.ts: 6ms, application-code: 137ms)
+ GET /admin/orders 200 in 145ms (next.js: 11ms, proxy.ts: 9ms, application-code: 125ms)
+ GET /admin/orders 200 in 145ms (next.js: 43ms, proxy.ts: 9ms, application-code: 93ms)
+ GET /admin/orders 200 in 146ms (next.js: 27ms, proxy.ts: 9ms, application-code: 109ms)
+ GET /admin/orders 200 in 161ms (next.js: 63ms, proxy.ts: 12ms, application-code: 86ms)
+ GET /admin/orders 200 in 127ms (next.js: 4ms, proxy.ts: 5ms, application-code: 117ms)
+ GET /admin/orders 200 in 134ms (next.js: 5ms, proxy.ts: 6ms, application-code: 123ms)
+ GET /admin/orders 200 in 131ms (next.js: 5ms, proxy.ts: 9ms, application-code: 117ms)
+ GET /admin/orders 200 in 131ms (next.js: 37ms, proxy.ts: 9ms, application-code: 85ms)
+ GET /admin/orders 200 in 132ms (next.js: 21ms, proxy.ts: 9ms, application-code: 102ms)
+ GET /admin/orders 200 in 148ms (next.js: 61ms, proxy.ts: 7ms, application-code: 79ms)
+ GET /admin/orders 200 in 131ms (next.js: 5ms, proxy.ts: 5ms, application-code: 121ms)
+ GET /admin/orders 200 in 138ms (next.js: 5ms, proxy.ts: 6ms, application-code: 127ms)
+ GET /admin/orders 200 in 140ms (next.js: 10ms, proxy.ts: 9ms, application-code: 120ms)
+ GET /admin/orders 200 in 140ms (next.js: 26ms, proxy.ts: 9ms, application-code: 105ms)
+ GET /admin/orders 200 in 140ms (next.js: 42ms, proxy.ts: 9ms, application-code: 89ms)
+ GET /admin/orders 200 in 158ms (next.js: 61ms, proxy.ts: 12ms, application-code: 85ms)
+ GET /admin/orders 200 in 133ms (next.js: 5ms, proxy.ts: 5ms, application-code: 122ms)
+ GET /admin/orders 200 in 144ms (next.js: 5ms, proxy.ts: 9ms, application-code: 130ms)
+ GET /admin/orders 200 in 138ms (next.js: 6ms, proxy.ts: 9ms, application-code: 124ms)
+ GET /admin/orders 200 in 138ms (next.js: 38ms, proxy.ts: 8ms, application-code: 91ms)
+ GET /admin/orders 200 in 139ms (next.js: 22ms, proxy.ts: 9ms, application-code: 108ms)
+ GET /admin/orders 200 in 155ms (next.js: 62ms, proxy.ts: 6ms, application-code: 87ms)
+ GET /admin/orders 200 in 128ms (next.js: 5ms, proxy.ts: 6ms, application-code: 117ms)
+ GET /admin/orders 200 in 134ms (next.js: 6ms, proxy.ts: 5ms, application-code: 123ms)
+ GET /admin/orders 200 in 133ms (next.js: 6ms, proxy.ts: 9ms, application-code: 118ms)
+ GET /admin/orders 200 in 133ms (next.js: 22ms, proxy.ts: 9ms, application-code: 103ms)
+ GET /admin/orders 200 in 133ms (next.js: 37ms, proxy.ts: 8ms, application-code: 87ms)
+ GET /admin/orders 200 in 150ms (next.js: 61ms, proxy.ts: 6ms, application-code: 83ms)
+ GET /admin/orders 200 in 135ms (next.js: 5ms, proxy.ts: 5ms, application-code: 126ms)
+ GET /admin/orders 200 in 141ms (next.js: 5ms, proxy.ts: 5ms, application-code: 131ms)
+ GET /admin/orders 200 in 140ms (next.js: 12ms, proxy.ts: 10ms, application-code: 118ms)
+ GET /admin/orders 200 in 139ms (next.js: 31ms, proxy.ts: 9ms, application-code: 99ms)
+ GET /admin/orders 200 in 139ms (next.js: 47ms, proxy.ts: 9ms, application-code: 83ms)
+ GET /admin/orders 200 in 156ms (next.js: 63ms, proxy.ts: 12ms, application-code: 81ms)
+ GET /admin/orders 200 in 125ms (next.js: 4ms, proxy.ts: 5ms, application-code: 115ms)
+ GET /admin/orders 200 in 108ms (next.js: 6ms, proxy.ts: 6ms, application-code: 96ms)
+ GET /admin/orders 200 in 82ms (next.js: 5ms, proxy.ts: 8ms, application-code: 68ms)
+ GET /admin/orders 200 in 80ms (next.js: 39ms, proxy.ts: 7ms, application-code: 34ms)
+ GET /admin/orders 200 in 81ms (next.js: 23ms, proxy.ts: 7ms, application-code: 50ms)
+✓ Compiled in 40ms
+⨯ TypeError: Cannot read properties of undefined (reading 'findMany')
+    at getPageData (app\page.tsx:31:24)
+    at HomePage (app\page.tsx:38:61)
+  29 |       orderBy: { price: "asc" },
+  30 |     }),
+> 31 |     prisma.reviewImage.findMany({ orderBy: { sortOrder: "asc" } }),
+     |                        ^
+  32 |   ]);
+  33 |
+  34 |   return { siteSettings, paymentSettings, packages }; {
+  digest: '1108017541'
+}
+⨯ TypeError: Cannot read properties of undefined (reading 'findMany')
+    at getPageData (app\page.tsx:31:24)
+    at HomePage (app\page.tsx:38:61)
+  29 |       orderBy: { price: "asc" },
+  30 |     }),
+> 31 |     prisma.reviewImage.findMany({ orderBy: { sortOrder: "asc" } }),
+     |                        ^
+  32 |   ]);
+  33 |
+  34 |   return { siteSettings, paymentSettings, packages }; {
+  digest: '1108017541'
+}
+ GET / 200 in 198ms (next.js: 88ms, application-code: 110ms)
+ GET / 200 in 91ms (next.js: 40ms, application-code: 51ms)
+ GET /admin/orders 200 in 229ms (next.js: 23ms, proxy.ts: 125ms, application-code: 81ms)
+ GET /admin/orders 200 in 73ms (next.js: 6ms, proxy.ts: 5ms, application-code: 62ms)
+⨯ TypeError: Cannot read properties of undefined (reading 'findMany')
+    at getPageData (app\page.tsx:31:24)
+    at HomePage (app\page.tsx:38:61)
+  29 |       orderBy: { price: "asc" },
+  30 |     }),
+> 31 |     prisma.reviewImage.findMany({ orderBy: { sortOrder: "asc" } }),
+     |                        ^
+  32 |   ]);
+  33 |
+  34 |   return { siteSettings, paymentSettings, packages, reviewImages }; {
+  digest: '167045892'
+}
+ GET / 500 in 268ms (next.js: 57ms, application-code: 210ms)
+ GET /admin/orders 200 in 272ms (next.js: 21ms, proxy.ts: 167ms, application-code: 84ms)
+ GET /admin/orders 200 in 44ms (next.js: 5ms, proxy.ts: 7ms, application-code: 31ms)
+⨯ TypeError: Cannot read properties of undefined (reading 'findMany')
+    at getPageData (app\page.tsx:31:24)
+    at HomePage (app\page.tsx:38:75)
+  29 |       orderBy: { price: "asc" },
+  30 |     }),
+> 31 |     prisma.reviewImage.findMany({ orderBy: { sortOrder: "asc" } }),
+     |                        ^
+  32 |   ]);
+  33 |
+  34 |   return { siteSettings, paymentSettings, packages, reviewImages }; {
+  digest: '2124521217'
+}
+ GET / 500 in 247ms (next.js: 56ms, application-code: 191ms)
+ GET /admin/orders 200 in 253ms (next.js: 19ms, proxy.ts: 164ms, application-code: 70ms)
+ GET /admin/orders 200 in 44ms (next.js: 6ms, proxy.ts: 9ms, application-code: 29ms)
+⨯ TypeError: Cannot read properties of undefined (reading 'findMany')
+    at getPageData (app\page.tsx:31:24)
+    at HomePage (app\page.tsx:38:75)
+  29 |       orderBy: { price: "asc" },
+  30 |     }),
+> 31 |     prisma.reviewImage.findMany({ orderBy: { sortOrder: "asc" } }),
+     |                        ^
+  32 |   ]);
+  33 |
+  34 |   return { siteSettings, paymentSettings, packages, reviewImages }; {
+  digest: '2368144581'
+}
+ GET / 500 in 288ms (next.js: 95ms, application-code: 193ms)
+ GET /admin/orders 200 in 296ms (next.js: 173ms, proxy.ts: 12ms, application-code: 110ms)
+ GET /admin/orders 200 in 192ms (next.js: 6ms, proxy.ts: 43ms, application-code: 143ms)
+ GET /admin/orders 200 in 128ms (next.js: 10ms, proxy.ts: 9ms, application-code: 109ms)
+ GET /admin/orders 200 in 127ms (next.js: 28ms, proxy.ts: 10ms, application-code: 89ms)
+ GET /admin/orders 200 in 128ms (next.js: 49ms, proxy.ts: 10ms, application-code: 70ms)
+ GET /admin/orders 200 in 129ms (next.js: 67ms, proxy.ts: 9ms, application-code: 52ms)
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+✓ Compiled in 27ms
+⨯ TypeError: Cannot read properties of undefined (reading 'findMany')
+    at getPageData (app\page.tsx:31:24)
+    at HomePage (app\page.tsx:38:75)
+  29 |       orderBy: { price: "asc" },
+  30 |     }),
+> 31 |     prisma.reviewImage.findMany({ orderBy: { sortOrder: "asc" } }),
+     |                        ^
+  32 |   ]);
+  33 |
+  34 |   return { siteSettings, paymentSettings, packages, reviewImages }; {
+  digest: '2368144581'
+}
+ GET / 500 in 172ms (next.js: 51ms, application-code: 121ms)
+ GET /admin/orders 200 in 232ms (next.js: 138ms, proxy.ts: 36ms, application-code: 58ms)
+⨯ TypeError: Cannot read properties of undefined (reading 'findMany')
+    at getPageData (app\page.tsx:31:24)
+    at HomePage (app\page.tsx:38:75)
+  29 |       orderBy: { price: "asc" },
+  30 |     }),
+> 31 |     prisma.reviewImage.findMany({ orderBy: { sortOrder: "asc" } }),
+     |                        ^
+  32 |   ]);
+  33 |
+  34 |   return { siteSettings, paymentSettings, packages, reviewImages }; {
+  digest: '2368144581'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+✓ Compiled in 23ms
+ GET / 500 in 244ms (next.js: 55ms, application-code: 189ms)
+ GET /admin/orders 200 in 249ms (next.js: 20ms, proxy.ts: 158ms, application-code: 72ms)
+ GET /admin/orders 200 in 44ms (next.js: 6ms, proxy.ts: 8ms, application-code: 30ms)
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ TypeError: Cannot read properties of undefined (reading 'findMany')
+    at getPageData (app\page.tsx:31:24)
+    at HomePage (app\page.tsx:38:75)
+  29 |       orderBy: { price: "asc" },
+  30 |     }),
+> 31 |     prisma.reviewImage.findMany({ orderBy: { sortOrder: "asc" } }),
+     |                        ^
+  32 |   ]);
+  33 |
+  34 |   return { siteSettings, paymentSettings, packages, reviewImages }; {
+  digest: '2368144581'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+✓ Compiled in 60ms
+ GET / 500 in 233ms (next.js: 61ms, application-code: 172ms)
+ GET /admin/orders 200 in 262ms (next.js: 26ms, proxy.ts: 159ms, application-code: 77ms)
+ GET /admin/orders 200 in 81ms (next.js: 7ms, proxy.ts: 6ms, application-code: 68ms)
+ GET /admin/orders 200 in 48ms (next.js: 6ms, proxy.ts: 10ms, application-code: 32ms)
+ GET /admin/settings 200 in 210ms (next.js: 93ms, proxy.ts: 6ms, application-code: 111ms)
+ GET /api/admin/review-images 401 in 210ms (next.js: 190ms, application-code: 20ms)
+ GET /api/admin/review-images 401 in 11ms (next.js: 3ms, application-code: 8ms)
+⨯ TypeError: Cannot read properties of undefined (reading 'findMany')
+    at getPageData (app\page.tsx:31:24)
+    at HomePage (app\page.tsx:38:75)
+  29 |       orderBy: { price: "asc" },
+  30 |     }),
+> 31 |     prisma.reviewImage.findMany({ orderBy: { sortOrder: "asc" } }),
+     |                        ^
+  32 |   ]);
+  33 |
+  34 |   return { siteSettings, paymentSettings, packages, reviewImages }; {
+  digest: '2368144581'
+}
+ GET / 500 in 65ms (next.js: 5ms, application-code: 60ms)
+⨯ TypeError: Cannot read properties of undefined (reading 'findMany')
+    at getPageData (app\page.tsx:31:24)
+    at HomePage (app\page.tsx:38:75)
+  29 |       orderBy: { price: "asc" },
+  30 |     }),
+> 31 |     prisma.reviewImage.findMany({ orderBy: { sortOrder: "asc" } }),
+     |                        ^
+  32 |   ]);
+  33 |
+  34 |   return { siteSettings, paymentSettings, packages, reviewImages }; {
+  digest: '2368144581'
+}
+ GET / 500 in 64ms (next.js: 5ms, application-code: 58ms)
+[browser] Uncaught TypeError: Cannot read properties of undefined (reading 'findMany')
+    at getPageData (app\page.tsx:31:24)
+    at HomePage (app\page.tsx:38:75)
+    at resolveErrorDev (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_compiled_react-server-dom-turbopack_1d-nw-j._.js:1919:105)
+    at processFullStringRow (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_compiled_react-server-dom-turbopack_1d-nw-j._.js:2434:29)
+    at processFullBinaryRow (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_compiled_react-server-dom-turbopack_1d-nw-j._.js:2393:9)
+    at processBinaryChunk (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_compiled_react-server-dom-turbopack_1d-nw-j._.js:2502:221)
+    at progress (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_compiled_react-server-dom-turbopack_1d-nw-j._.js:2689:13)
+  29 |       orderBy: { price: "asc" },
+  30 |     }),
+> 31 |     prisma.reviewImage.findMany({ orderBy: { sortOrder: "asc" } }),
+     |                        ^
+  32 |   ]);
+  33 |
+  34 |   return { siteSettings, paymentSettings, packages, reviewImages };
+⨯ TypeError: Cannot read properties of undefined (reading 'findMany')
+    at getPageData (app\page.tsx:31:24)
+    at HomePage (app\page.tsx:38:75)
+  29 |       orderBy: { price: "asc" },
+  30 |     }),
+> 31 |     prisma.reviewImage.findMany({ orderBy: { sortOrder: "asc" } }),
+     |                        ^
+  32 |   ]);
+  33 |
+  34 |   return { siteSettings, paymentSettings, packages, reviewImages }; {
+  digest: '2368144581'
+}
+ GET / 500 in 82ms (next.js: 5ms, application-code: 77ms)
+[browser] Uncaught TypeError: Cannot read properties of undefined (reading 'findMany')
+    at getPageData (app\page.tsx:31:24)
+    at HomePage (app\page.tsx:38:75)
+    at resolveErrorDev (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_compiled_react-server-dom-turbopack_1d-nw-j._.js:1919:105)
+    at processFullStringRow (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_compiled_react-server-dom-turbopack_1d-nw-j._.js:2434:29)
+    at processFullBinaryRow (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_compiled_react-server-dom-turbopack_1d-nw-j._.js:2393:9)
+    at processBinaryChunk (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_compiled_react-server-dom-turbopack_1d-nw-j._.js:2502:221)
+    at progress (file://E:/AI Claude/Health Booster/health-booster/.next/dev/static/chunks/219m_next_dist_compiled_react-server-dom-turbopack_1d-nw-j._.js:2689:13)
+  29 |       orderBy: { price: "asc" },
+  30 |     }),
+> 31 |     prisma.reviewImage.findMany({ orderBy: { sortOrder: "asc" } }),
+     |                        ^
+  32 |   ]);
+  33 |
+  34 |   return { siteSettings, paymentSettings, packages, reviewImages };
+[?25h

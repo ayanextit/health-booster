@@ -1,0 +1,114 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Product {
+  id          String    @id @default(cuid())
+  name        String
+  slug        String    @unique
+  description String?
+  status      String    @default("active")
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  packages    Package[]
+}
+
+model Package {
+  id           String   @id @default(cuid())
+  productId    String
+  product      Product  @relation(fields: [productId], references: [id])
+  title        String
+  quantity     Int      @default(1)
+  capsuleCount Int      @default(30)
+  price        Int
+  salePrice    Int?
+  badge        String?
+  isPopular    Boolean  @default(false)
+  status       String   @default("active")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  orders       Order[]
+}
+
+model Order {
+  id             String   @id @default(cuid())
+  orderNumber    String   @unique
+  customerName   String
+  customerEmail  String?
+  phone          String
+  address        String
+  area           String
+  district       String
+  productName    String
+  packageId      String
+  package        Package  @relation(fields: [packageId], references: [id])
+  packageTitle   String
+  quantity       Int      @default(1)
+  productPrice   Int
+  deliveryArea   String
+  deliveryCharge Int
+  paymentMethod  String
+  transactionId  String?
+  totalAmount    Int
+  note           String?
+  status         String   @default("Pending")
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model PaymentSettings {
+  id           String   @id @default(cuid())
+  bkashNumber  String   @default("")
+  nagadNumber  String   @default("")
+  codEnabled   Boolean  @default(true)
+  bkashEnabled Boolean  @default(true)
+  nagadEnabled Boolean  @default(true)
+  updatedAt    DateTime @updatedAt
+}
+
+model SiteSettings {
+  id                 String   @id @default(cuid())
+  siteName           String   @default("Health Booster")
+  phone              String   @default("")
+  address            String   @default("")
+  facebookUrl        String   @default("")
+  heroTitle          String   @default("হেলদি ভাবে ওজন বাড়াতে ও রুচি বাড়াতে সহায়ক Health Booster Supplement")
+  heroSubtitle       String   @default("Natural Ingredients দিয়ে তৈরি Health Booster Supplement রুচি, হজমশক্তি ও দৈনন্দিন এনার্জি সাপোর্ট করতে সাহায্য করে।")
+  announcementText   String   @default("ঢাকার ভিতরে ১–২ দিন, ঢাকার বাইরে ২–৩ দিনে ডেলিভারি")
+  insideDhakaCharge  Int      @default(80)
+  outsideDhakaCharge Int      @default(130)
+  productImageUrl    String   @default("")
+  updatedAt          DateTime @updatedAt
+}
+
+model ReviewImage {
+  id        String   @id @default(cuid())
+  imageUrl  String
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+}
+
+model FAQ {
+  id        String   @id @default(cuid())
+  question  String
+  answer    String
+  sortOrder Int      @default(0)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model AdminUser {
+  id        String   @id @default(cuid())
+  name      String   @default("Admin")
+  email     String   @unique
+  password  String
+  role      String   @default("staff")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
