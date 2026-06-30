@@ -4,12 +4,14 @@ import { Pool } from "pg";
 
 function createPrismaClient() {
   const url = new URL(process.env.DATABASE_URL!);
+  const isProduction = process.env.NODE_ENV === "production";
   const pool = new Pool({
     host: url.hostname,
     port: parseInt(url.port || "5432"),
     database: url.pathname.replace("/", "").split("?")[0],
     user: url.username,
     password: url.password || undefined,
+    ssl: isProduction ? { rejectUnauthorized: false } : false,
   });
   const adapter = new PrismaPg(pool);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
