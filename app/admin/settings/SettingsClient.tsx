@@ -2,12 +2,13 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Loader2, CheckCircle2, Globe, CreditCard, ImageIcon, Upload, Trash2, MessageSquare } from "lucide-react";
-import { paymentSettingsSchema, siteSettingsSchema } from "@/lib/validations";
+import { Loader2, CheckCircle2, Globe, CreditCard, ImageIcon, Upload, Trash2, MessageSquare, Mail } from "lucide-react";
+import { paymentSettingsSchema, siteSettingsSchema, emailSettingsSchema } from "@/lib/validations";
 import { z } from "zod";
 
 type SiteForm = z.infer<typeof siteSettingsSchema>;
 type PaymentForm = z.infer<typeof paymentSettingsSchema>;
+type EmailForm = z.infer<typeof emailSettingsSchema>;
 
 interface ReviewImage {
   id: string;
@@ -18,12 +19,16 @@ interface ReviewImage {
 interface Props {
   initialSite: SiteForm | null;
   initialPayment: PaymentForm | null;
+  initialEmail: EmailForm | null;
   productImageUrl?: string | null;
 }
 
-export default function SettingsClient({ initialSite, initialPayment, productImageUrl: initialImg }: Props) {
+export default function SettingsClient({ initialSite, initialPayment, initialEmail, productImageUrl: initialImg }: Props) {
   const [siteSuccess, setSiteSuccess] = useState(false);
   const [paymentSuccess, setPaymentSuccess] = useState(false);
+  const [emailSuccess, setEmailSuccess] = useState(false);
+  const [testingEmail, setTestingEmail] = useState(false);
+  const [testEmailMsg, setTestEmailMsg] = useState("");
   const [imgUrl, setImgUrl] = useState(initialImg || "");
   const [imgLoading, setImgLoading] = useState(false);
   const [imgError, setImgError] = useState("");
@@ -79,6 +84,20 @@ export default function SettingsClient({ initialSite, initialPayment, productIma
     },
   });
 
+  const emailForm = useForm<EmailForm>({
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    resolver: zodResolver(emailSettingsSchema) as any,
+    defaultValues: initialEmail ?? {
+      smtpHost: "",
+      smtpPort: 587,
+      smtpSecure: false,
+      smtpUser: "",
+      smtpPass: "",
+      fromName: "Health Booster",
+      fromEmail: "",
+    },
+  });
+
   const onSiteSubmit = async (data: SiteForm) => {
     const res = await fetch("/api/admin/settings", {
       method: "PUT",
@@ -101,6 +120,28 @@ export default function SettingsClient({ initialSite, initialPayment, productIma
       setPaymentSuccess(true);
       setTimeout(() => setPaymentSuccess(false), 3000);
     }
+  };
+
+  const onEmailSubmit = async (data: EmailForm) => {
+    const res = await fetch("/api/admin/settings", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ type: "email", data }),
+    });
+    if (res.ok) {
+      setEmailSuccess(true);
+      setTimeout(() => setEmailSuccess(false), 3000);
+    }
+  };
+
+  const sendTestEmail = async () => {
+    setTestingEmail(true);
+    setTestEmailMsg("");
+    const res = await fetch("/api/admin/settings/test-email", { method: "POST" });
+    const json = await res.json();
+    setTestingEmail(false);
+    setTestEmailMsg(res.ok ? "✅ টেস্ট ইমেইল পাঠানো হয়েছে!" : `❌ ${json.error || "ব্যর্থ হয়েছে"}`);
+    setTimeout(() => setTestEmailMsg(""), 5000);
   };
 
   const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -397,6 +438,111 @@ export default function SettingsClient({ initialSite, initialPayment, productIma
                   <CheckCircle2 size={16} />
                   সংরক্ষিত হয়েছে!
                 </div>
+              )}
+            </div>
+          </form>
+        </div>
+
+        {/* Email / SMTP Settings */}
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center">
+              <Mail size={20} className="text-indigo-600" />
+            </div>
+            <div>
+              <h2 className="text-lg font-bold text-gray-900">ইমেইল সেটিংস (SMTP)</h2>
+              <p className="text-xs text-gray-500">অর্ডার কনফার্ম হলে গ্রাহককে ইনভয়েস পাঠানো হবে</p>
+            </div>
+          </div>
+
+          <form onSubmit={emailForm.handleSubmit(onEmailSubmit)} className="space-y-4">
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label className="text-sm font-semibold text-gray-700 mb-1.5 block">SMTP Host</label>
+                <input
+                  {...emailForm.register("smtpHost")}
+                  placeholder="mail.yourdomain.com"
+                  className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                />
+              </div>
+              <div>
+                <label className="text-sm font-semibold text-gray-700 mb-1.5 block">SMTP Port</label>
+                <input
+                  {...emailForm.register("smtpPort")}
+                  type="number"
+                  placeholder="587"
+                  className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                />
+              </div>
+              <div>
+                <label className="text-sm font-semibold text-gray-700 mb-1.5 block">SMTP ইউজারনেম (ইমেইল)</label>
+                <input
+                  {...emailForm.register("smtpUser")}
+                  placeholder="noreply@yourdomain.com"
+                  className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                />
+              </div>
+              <div>
+                <label className="text-sm font-semibold text-gray-700 mb-1.5 block">SMTP পাসওয়ার্ড</label>
+                <input
+                  {...emailForm.register("smtpPass")}
+                  type="password"
+                  placeholder="••••••••"
+                  className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                />
+              </div>
+              <div>
+                <label className="text-sm font-semibold text-gray-700 mb-1.5 block">প্রেরকের নাম</label>
+                <input
+                  {...emailForm.register("fromName")}
+                  placeholder="Health Booster"
+                  className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                />
+              </div>
+              <div>
+                <label className="text-sm font-semibold text-gray-700 mb-1.5 block">প্রেরকের ইমেইল (From)</label>
+                <input
+                  {...emailForm.register("fromEmail")}
+                  placeholder="noreply@yourdomain.com"
+                  className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                />
+              </div>
+            </div>
+
+            <label className="flex items-center gap-2 cursor-pointer">
+              <input
+                {...emailForm.register("smtpSecure")}
+                type="checkbox"
+                className="w-4 h-4 accent-indigo-600"
+              />
+              <span className="text-sm font-medium text-gray-700">SSL/TLS সক্রিয় (port 465 হলে চেক করুন)</span>
+            </label>
+
+            <div className="flex flex-wrap items-center gap-3 pt-2">
+              <button
+                type="submit"
+                disabled={emailForm.formState.isSubmitting}
+                className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-xl text-sm font-semibold"
+              >
+                {emailForm.formState.isSubmitting ? <Loader2 size={16} className="animate-spin" /> : null}
+                সংরক্ষণ করুন
+              </button>
+              <button
+                type="button"
+                onClick={sendTestEmail}
+                disabled={testingEmail}
+                className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 px-5 py-2.5 rounded-xl text-sm font-semibold"
+              >
+                {testingEmail ? <Loader2 size={16} className="animate-spin" /> : <Mail size={16} />}
+                টেস্ট ইমেইল পাঠান
+              </button>
+              {emailSuccess && (
+                <div className="flex items-center gap-1.5 text-indigo-600 text-sm font-medium">
+                  <CheckCircle2 size={16} /> সংরক্ষিত হয়েছে!
+                </div>
+              )}
+              {testEmailMsg && (
+                <p className="text-sm font-medium text-gray-700">{testEmailMsg}</p>
               )}
             </div>
           </form>

@@ -5,9 +5,10 @@ import AdminSidebar from "@/components/admin/AdminSidebar";
 import SettingsClient from "./SettingsClient";
 
 export default async function SettingsPage() {
-  const [siteSettings, paymentSettings] = await Promise.all([
+  const [siteSettings, paymentSettings, emailSettings] = await Promise.all([
     prisma.siteSettings.findFirst(),
     prisma.paymentSettings.findFirst(),
+    prisma.emailSettings.findFirst(),
   ]);
 
   return (
@@ -17,6 +18,7 @@ export default async function SettingsPage() {
         <SettingsClient
           initialSite={siteSettings}
           initialPayment={paymentSettings}
+          initialEmail={emailSettings}
           productImageUrl={siteSettings?.productImageUrl}
         />
       </main>

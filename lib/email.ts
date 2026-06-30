@@ -1,15 +1,22 @@
 import nodemailer from "nodemailer";
+import { prisma } from "@/lib/prisma";
 
-function getTransporter() {
-  return nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: Number(process.env.SMTP_PORT) || 587,
-    secure: process.env.SMTP_SECURE === "true",
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
-    },
-  });
+async function getSmtpConfig() {
+  const db = await prisma.emailSettings.findFirst();
+  if (db && db.smtpHost && db.smtpUser && db.smtpPass) {
+    return { host: db.smtpHost, port: db.smtpPort, secure: db.smtpSecure, user: db.smtpUser, pass: db.smtpPass, fromName: db.fromName, fromEmail: db.fromEmail };
+  }
+  // fallback to env vars
+  if (process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS) {
+    return {
+      host: process.env.SMTP_HOST, port: Number(process.env.SMTP_PORT) || 587,
+      secure: process.env.SMTP_SECURE === "true",
+      user: process.env.SMTP_USER, pass: process.env.SMTP_PASS,
+      fromName: process.env.SMTP_FROM_NAME || "Health Booster",
+      fromEmail: process.env.SMTP_FROM_EMAIL || process.env.SMTP_USER,
+    };
+  }
+  return null;
 }
 
 interface InvoiceData {
@@ -184,17 +191,21 @@ function invoiceHtml(d: InvoiceData): string {
 }
 
 export async function sendInvoiceEmail(data: InvoiceData): Promise<void> {
-  if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
+  const cfg = await getSmtpConfig();
+  if (!cfg) {
     console.warn("SMTP not configured — skipping invoice email");
     return;
   }
 
-  const transporter = getTransporter();
-  const fromName = process.env.SMTP_FROM_NAME || "Health Booster";
-  const fromEmail = process.env.SMTP_FROM_EMAIL || process.env.SMTP_USER!;
+  const transporter = nodemailer.createTransport({
+    host: cfg.host,
+    port: cfg.port,
+    secure: cfg.secure,
+    auth: { user: cfg.user, pass: cfg.pass },
+  });
 
   await transporter.sendMail({
-    from: `"${fromName}" <${fromEmail}>`,
+    from: `"${cfg.fromName}" <${cfg.fromEmail || cfg.user}>`,
     to: data.customerEmail,
     subject: `✅ অর্ডার কনফার্ম — ${data.orderNumber} | Health Booster`,
     html: invoiceHtml(data),

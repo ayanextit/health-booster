@@ -78,3 +78,13 @@ export const siteSettingsSchema = z.object({
   insideDhakaCharge: z.coerce.number().int().min(0),
   outsideDhakaCharge: z.coerce.number().int().min(0),
 });
+
+export const emailSettingsSchema = z.object({
+  smtpHost: z.string(),
+  smtpPort: z.coerce.number().int().min(1).max(65535),
+  smtpSecure: z.boolean(),
+  smtpUser: z.string(),
+  smtpPass: z.string(),
+  fromName: z.string(),
+  fromEmail: z.string(),
+});

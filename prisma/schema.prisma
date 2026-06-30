@@ -112,3 +112,15 @@ model AdminUser {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+model EmailSettings {
+  id         String   @id @default(cuid())
+  smtpHost   String   @default("")
+  smtpPort   Int      @default(587)
+  smtpSecure Boolean  @default(false)
+  smtpUser   String   @default("")
+  smtpPass   String   @default("")
+  fromName   String   @default("Health Booster")
+  fromEmail  String   @default("")
+  updatedAt  DateTime @updatedAt
+}
