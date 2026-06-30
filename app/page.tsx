@@ -79,8 +79,10 @@ export default async function HomePage() {
 
   return (
     <main className="flex-1">
-      <AnnouncementBar text={site.announcementText} />
-      <Navbar />
+      <div className="sticky top-0 z-50">
+        <AnnouncementBar text={site.announcementText} />
+        <Navbar />
+      </div>
       <HeroSection
         title={site.heroTitle}
         subtitle={site.heroSubtitle}
