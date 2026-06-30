@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useState, useEffect, useCallback } from "react";
-import { motion, AnimatePresence, useInView } from "framer-motion";
+import { motion, AnimatePresence, useInView, type Variants } from "framer-motion";
 import { Star, MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
 
 interface ReviewImage {
@@ -21,14 +21,14 @@ const DEFAULT_REVIEWS = [
   "/images/reviews/R05.jpg",
 ];
 
-const slideVariants = {
+const slideVariants: Variants = {
   enter: (dir: number) => ({
     x: dir > 0 ? "100%" : "-100%",
     opacity: 0,
     scale: 0.96,
   }),
   center: {
-    x: 0,
+    x: "0%",
     opacity: 1,
     scale: 1,
     transition: { duration: 0.45, ease: [0.32, 0.72, 0, 1] },
