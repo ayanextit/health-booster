@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Loader2, CheckCircle2, Globe, CreditCard, ImageIcon, Upload, Trash2, MessageSquare, Mail } from "lucide-react";
+import { Loader2, CheckCircle2, Globe, CreditCard, ImageIcon, Upload, Trash2, MessageSquare, Mail, Star } from "lucide-react";
 import { paymentSettingsSchema, siteSettingsSchema, emailSettingsSchema } from "@/lib/validations";
 import { z } from "zod";
 
@@ -21,9 +21,10 @@ interface Props {
   initialPayment: PaymentForm | null;
   initialEmail: EmailForm | null;
   productImageUrl?: string | null;
+  faviconUrl?: string | null;
 }
 
-export default function SettingsClient({ initialSite, initialPayment, initialEmail, productImageUrl: initialImg }: Props) {
+export default function SettingsClient({ initialSite, initialPayment, initialEmail, productImageUrl: initialImg, faviconUrl: initialFavicon }: Props) {
   const [siteSuccess, setSiteSuccess] = useState(false);
   const [paymentSuccess, setPaymentSuccess] = useState(false);
   const [emailSuccess, setEmailSuccess] = useState(false);
@@ -34,6 +35,12 @@ export default function SettingsClient({ initialSite, initialPayment, initialEma
   const [imgError, setImgError] = useState("");
   const [imgSuccess, setImgSuccess] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const [faviconUrl, setFaviconUrl] = useState(initialFavicon || "");
+  const [faviconLoading, setFaviconLoading] = useState(false);
+  const [faviconError, setFaviconError] = useState("");
+  const [faviconSuccess, setFaviconSuccess] = useState(false);
+  const faviconInputRef = useRef<HTMLInputElement>(null);
 
   // Review images state
   const [reviewImages, setReviewImages] = useState<ReviewImage[]>([]);
@@ -171,6 +178,33 @@ export default function SettingsClient({ initialSite, initialPayment, initialEma
     if (fileInputRef.current) fileInputRef.current.value = "";
   };
 
+  const handleFaviconUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setFaviconLoading(true);
+    setFaviconError("");
+    setFaviconSuccess(false);
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    const res = await fetch("/api/admin/upload-favicon", { method: "POST", body: formData });
+    setFaviconLoading(false);
+
+    if (res.ok) {
+      const data = await res.json();
+      setFaviconUrl(data.url);
+      setFaviconSuccess(true);
+      setTimeout(() => setFaviconSuccess(false), 4000);
+    } else {
+      const data = await res.json();
+      setFaviconError(data.error || "আপলোড ব্যর্থ হয়েছে");
+    }
+
+    if (faviconInputRef.current) faviconInputRef.current.value = "";
+  };
+
   const handleReviewUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
     if (!files || files.length === 0) return;
@@ -279,6 +313,75 @@ export default function SettingsClient({ initialSite, initialPayment, initialEma
               {imgUrl && (
                 <p className="text-xs text-gray-400 mt-3 break-all">
                   বর্তমান ছবি: {imgUrl}
+                </p>
+              )}
+            </div>
+          </div>
+        </div>
+
+        {/* Favicon Upload */}
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center">
+              <Star size={20} className="text-orange-500" />
+            </div>
+            <div>
+              <h2 className="text-lg font-bold text-gray-900">Favicon (সাইট লোগো)</h2>
+              <p className="text-xs text-gray-500">Browser tab-এ যে আইকন দেখায়</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-start gap-6">
+            {/* Preview */}
+            <div className="w-20 h-20 rounded-2xl overflow-hidden border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center shrink-0">
+              {faviconUrl ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={faviconUrl} alt="Favicon" className="w-12 h-12 object-contain" />
+              ) : (
+                <div className="text-center">
+                  <Star size={24} className="text-gray-300 mx-auto" />
+                </div>
+              )}
+            </div>
+
+            {/* Upload controls */}
+            <div className="flex-1">
+              <p className="text-sm text-gray-600 mb-4">
+                PNG, WebP বা ICO ফরম্যাটে সর্বোচ্চ ২ MB। সেরা ফলাফলের জন্য ৩২×৩২ বা ৬৪×৬৪ পিক্সেল ব্যবহার করুন।
+              </p>
+
+              <input
+                ref={faviconInputRef}
+                type="file"
+                accept="image/png,image/webp,image/x-icon,image/vnd.microsoft.icon,image/jpeg"
+                onChange={handleFaviconUpload}
+                className="hidden"
+                id="favicon-input"
+              />
+              <label
+                htmlFor="favicon-input"
+                className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 rounded-xl text-sm font-semibold cursor-pointer transition-colors"
+              >
+                {faviconLoading ? (
+                  <Loader2 size={16} className="animate-spin" />
+                ) : (
+                  <Upload size={16} />
+                )}
+                {faviconLoading ? "আপলোড হচ্ছে..." : "Favicon আপলোড করুন"}
+              </label>
+
+              {faviconSuccess && (
+                <div className="flex items-center gap-1.5 text-green-600 text-sm font-medium mt-3">
+                  <CheckCircle2 size={16} />
+                  Favicon সফলভাবে আপলোড হয়েছে! পেজ রিফ্রেশ করলে দেখাবে।
+                </div>
+              )}
+              {faviconError && (
+                <p className="text-red-500 text-sm mt-3">{faviconError}</p>
+              )}
+              {faviconUrl && (
+                <p className="text-xs text-gray-400 mt-3 break-all">
+                  বর্তমান favicon: {faviconUrl}
                 </p>
               )}
             </div>

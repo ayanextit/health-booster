@@ -83,6 +83,7 @@ model SiteSettings {
   insideDhakaCharge  Int      @default(80)
   outsideDhakaCharge Int      @default(130)
   productImageUrl    String   @default("")
+  faviconUrl         String   @default("")
   updatedAt          DateTime @updatedAt
 }
 
