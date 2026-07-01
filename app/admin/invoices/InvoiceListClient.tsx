@@ -2,7 +2,8 @@
 
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
-import { FileText, Mail, CheckCircle2, Search, X } from "lucide-react";
+import Link from "next/link";
+import { FileText, Mail, CheckCircle2, Search, X, Eye } from "lucide-react";
 
 interface Invoice {
   id: string;
@@ -99,6 +100,7 @@ export default function InvoiceListClient({ invoices, totalAmount, searchQuery }
                 <th className="text-right px-5 py-3.5 font-semibold text-gray-600">মোট</th>
                 <th className="text-left px-5 py-3.5 font-semibold text-gray-600">তারিখ</th>
                 <th className="text-center px-5 py-3.5 font-semibold text-gray-600">Email</th>
+                <th className="text-center px-5 py-3.5 font-semibold text-gray-600">ইনভয়েস</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-50">
@@ -154,6 +156,16 @@ export default function InvoiceListClient({ invoices, totalAmount, searchQuery }
                           নেই
                         </span>
                       )}
+                    </td>
+                    <td className="px-5 py-4 text-center">
+                      <Link
+                        href={`/admin/invoices/${inv.id}`}
+                        target="_blank"
+                        className="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-50 hover:bg-green-50 text-gray-600 hover:text-green-700 border border-gray-200 hover:border-green-200 rounded-lg text-xs font-medium transition-colors"
+                      >
+                        <Eye size={13} />
+                        দেখুন
+                      </Link>
                     </td>
                   </tr>
                 );

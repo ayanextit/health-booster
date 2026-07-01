@@ -47,7 +47,7 @@ function deliveryLabel(area: string) {
   return area === "inside_dhaka" ? "ঢাকার ভিতরে" : "ঢাকার বাইরে";
 }
 
-function invoiceHtml(d: InvoiceData): string {
+export function invoiceHtml(d: InvoiceData): string {
   const date = new Date(d.createdAt).toLocaleDateString("bn-BD", {
     year: "numeric", month: "long", day: "numeric",
   });
