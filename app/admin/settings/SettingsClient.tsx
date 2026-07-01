@@ -212,7 +212,7 @@ export default function SettingsClient({ initialSite, initialPayment, initialEma
       <div className="mb-6">
         <h1 className="text-2xl font-bold text-gray-900">সেটিংস</h1>
         <p className="text-gray-500 text-sm mt-1">
-          সাইট ও পেমেন্ট সেটিংস পরিচালনা
+          সাইট, পেমেন্ট ও ইমেইল সেটিংস পরিচালনা — v2
         </p>
       </div>
 
