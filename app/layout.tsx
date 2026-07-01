@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import fs from "fs";
+import path from "path";
 
 const geist = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
+const BASE_META = {
   title: "Health Booster Supplement | হেলদি Weight Gain Support",
   description:
     "Natural Ingredients দিয়ে তৈরি Health Booster Supplement রুচি, হজমশক্তি ও হেলদি weight gain journey support করতে সহায়ক।",
@@ -15,13 +17,26 @@ export const metadata: Metadata = {
     title: "Health Booster Supplement | হেলদি Weight Gain Support",
     description:
       "Natural Ingredients দিয়ে তৈরি Health Booster Supplement রুচি, হজমশক্তি ও হেলদি weight gain journey support করতে সহায়ক।",
-    type: "website",
+    type: "website" as const,
     locale: "bn_BD",
   },
-  icons: {
-    icon: "/uploads/site-favicon.png",
-  },
 };
+
+export async function generateMetadata(): Promise<Metadata> {
+  let faviconHref = "/uploads/site-favicon.png";
+  try {
+    const filePath = path.join(process.cwd(), "public", "uploads", "site-favicon.png");
+    const stat = fs.statSync(filePath);
+    faviconHref = `/uploads/site-favicon.png?v=${Math.floor(stat.mtimeMs)}`;
+  } catch {
+    // file not uploaded yet — use plain path (browser will 404 gracefully)
+  }
+
+  return {
+    ...BASE_META,
+    icons: { icon: faviconHref },
+  };
+}
 
 export default function RootLayout({
   children,
