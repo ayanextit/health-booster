@@ -2,7 +2,6 @@ import { writeFile, mkdir } from "fs/promises";
 import path from "path";
 import { NextRequest, NextResponse } from "next/server";
 import { getAdminSessionFromRequest } from "@/lib/auth";
-import { prisma } from "@/lib/prisma";
 
 export async function POST(request: NextRequest) {
   const session = await getAdminSessionFromRequest(request);
@@ -33,24 +32,10 @@ export async function POST(request: NextRequest) {
   const bytes = await file.arrayBuffer();
   const buffer = Buffer.from(bytes);
 
-  const ext = (file.name.split(".").pop() || "png").toLowerCase();
-  const filename = `favicon-${Date.now()}.${ext}`;
   const uploadDir = path.join(process.cwd(), "public", "uploads");
-
   await mkdir(uploadDir, { recursive: true });
-  await writeFile(path.join(uploadDir, filename), buffer);
+  // Always save as site-favicon.png (fixed name, overwrites previous)
+  await writeFile(path.join(uploadDir, "site-favicon.png"), buffer);
 
-  const faviconUrl = `/uploads/${filename}`;
-
-  const existing = await prisma.siteSettings.findFirst();
-  if (existing) {
-    await prisma.siteSettings.update({
-      where: { id: existing.id },
-      data: { faviconUrl },
-    });
-  } else {
-    await prisma.siteSettings.create({ data: { faviconUrl } });
-  }
-
-  return NextResponse.json({ url: faviconUrl });
+  return NextResponse.json({ url: "/uploads/site-favicon.png" });
 }

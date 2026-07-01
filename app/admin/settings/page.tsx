@@ -20,7 +20,6 @@ export default async function SettingsPage() {
           initialPayment={paymentSettings}
           initialEmail={emailSettings}
           productImageUrl={siteSettings?.productImageUrl}
-          faviconUrl={siteSettings?.faviconUrl}
         />
       </main>
     </div>

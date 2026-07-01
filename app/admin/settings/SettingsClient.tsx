@@ -21,10 +21,9 @@ interface Props {
   initialPayment: PaymentForm | null;
   initialEmail: EmailForm | null;
   productImageUrl?: string | null;
-  faviconUrl?: string | null;
 }
 
-export default function SettingsClient({ initialSite, initialPayment, initialEmail, productImageUrl: initialImg, faviconUrl: initialFavicon }: Props) {
+export default function SettingsClient({ initialSite, initialPayment, initialEmail, productImageUrl: initialImg }: Props) {
   const [siteSuccess, setSiteSuccess] = useState(false);
   const [paymentSuccess, setPaymentSuccess] = useState(false);
   const [emailSuccess, setEmailSuccess] = useState(false);
@@ -36,7 +35,7 @@ export default function SettingsClient({ initialSite, initialPayment, initialEma
   const [imgSuccess, setImgSuccess] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const [faviconUrl, setFaviconUrl] = useState(initialFavicon || "");
+  const [faviconUrl, setFaviconUrl] = useState("/uploads/site-favicon.png");
   const [faviconLoading, setFaviconLoading] = useState(false);
   const [faviconError, setFaviconError] = useState("");
   const [faviconSuccess, setFaviconSuccess] = useState(false);
@@ -193,8 +192,7 @@ export default function SettingsClient({ initialSite, initialPayment, initialEma
     setFaviconLoading(false);
 
     if (res.ok) {
-      const data = await res.json();
-      setFaviconUrl(data.url);
+      setFaviconUrl(`/uploads/site-favicon.png?v=${Date.now()}`);
       setFaviconSuccess(true);
       setTimeout(() => setFaviconSuccess(false), 4000);
     } else {
