@@ -9,7 +9,8 @@ export const orderSchema = z
     customerName: z.string().min(2, "নাম কমপক্ষে ২ অক্ষর হতে হবে"),
     customerEmail: z.string().email("সঠিক ইমেইল দিন").optional().or(z.literal("")),
     phone: bangladeshiPhone,
-    address: z.string().min(10, "পূর্ণ ঠিকানা লিখুন (বাড়ির নম্বর, এলাকা, জেলাসহ)"),
+    address: z.string().min(5, "পূর্ণ ঠিকানা লিখুন"),
+    district: z.string().min(1, "জেলা সিলেক্ট করুন"),
     packageId: z.string().min(1, "প্যাকেজ সিলেক্ট করুন"),
     deliveryArea: z
       .string()
