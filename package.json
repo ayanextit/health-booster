@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
-    "start": "prisma generate && next build && next start",
+    "build": "prisma generate && next build && cp -r public .next/standalone/public && node -e \"require('fs').mkdirSync('.next/standalone/.next', {recursive:true})\" && cp -r .next/static .next/standalone/.next/static",
+    "start": "node server.js",
     "lint": "eslint",
     "db:push": "prisma db push",
     "db:seed": "ts-node --compiler-options '{\"module\":\"CommonJS\"}' prisma/seed.ts",
