@@ -20,7 +20,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: clip; /* clip instead of hidden — hidden breaks position:sticky */
 }
 
 @keyframes pulse-ring {
