@@ -33,13 +33,14 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const product = await prisma.product.findFirst();
-  if (!product) {
+  const productId = body.productId as string | undefined;
+  const resolvedProductId = productId || (await prisma.product.findFirst())?.id;
+  if (!resolvedProductId) {
     return NextResponse.json({ error: "No product found" }, { status: 404 });
   }
 
   const pkg = await prisma.package.create({
-    data: { ...parsed.data, productId: product.id },
+    data: { ...parsed.data, productId: resolvedProductId },
   });
 
   return NextResponse.json(pkg, { status: 201 });

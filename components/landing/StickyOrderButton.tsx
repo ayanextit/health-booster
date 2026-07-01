@@ -5,10 +5,25 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function StickyOrderButton() {
   const [show, setShow] = useState(false);
+  const [orderVisible, setOrderVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setShow(window.scrollY > 500);
     window.addEventListener("scroll", handleScroll, { passive: true });
+
+    const orderSection = document.getElementById("order");
+    if (orderSection) {
+      const observer = new IntersectionObserver(
+        ([entry]) => setOrderVisible(entry.isIntersecting),
+        { threshold: 0.1 }
+      );
+      observer.observe(orderSection);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+        observer.disconnect();
+      };
+    }
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -18,7 +33,7 @@ export default function StickyOrderButton() {
 
   return (
     <AnimatePresence>
-      {show && (
+      {show && !orderVisible && (
         <motion.div
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
