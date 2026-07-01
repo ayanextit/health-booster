@@ -36,7 +36,6 @@ export default function SettingsClient({ initialSite, initialPayment, initialEma
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const [faviconUrl, setFaviconUrl] = useState("/uploads/site-favicon.png");
-  const [faviconBroken, setFaviconBroken] = useState(false);
   const [faviconLoading, setFaviconLoading] = useState(false);
   const [faviconError, setFaviconError] = useState("");
   const [faviconSuccess, setFaviconSuccess] = useState(false);
@@ -193,7 +192,6 @@ export default function SettingsClient({ initialSite, initialPayment, initialEma
     setFaviconLoading(false);
 
     if (res.ok) {
-      setFaviconBroken(false);
       setFaviconUrl(`/uploads/site-favicon.png?v=${Date.now()}`);
       setFaviconSuccess(true);
       setTimeout(() => setFaviconSuccess(false), 4000);
@@ -334,14 +332,13 @@ export default function SettingsClient({ initialSite, initialPayment, initialEma
           <div className="flex flex-col sm:flex-row items-start gap-6">
             {/* Preview */}
             <div className="w-20 h-20 rounded-2xl overflow-hidden border-2 border-dashed border-gray-200 bg-gray-50 flex items-center justify-center shrink-0">
-              {faviconUrl && !faviconBroken ? (
+              {faviconUrl ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
                   src={faviconUrl}
                   alt="Favicon"
                   className="w-12 h-12 object-contain"
-                  onError={() => setFaviconBroken(true)}
-                  onLoad={() => setFaviconBroken(false)}
+                  onError={() => setFaviconUrl("")}
                 />
               ) : (
                 <div className="text-center">
