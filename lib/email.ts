@@ -25,6 +25,8 @@ interface InvoiceData {
   customerEmail: string;
   phone: string;
   address: string;
+  area: string;
+  district: string;
   packageTitle: string;
   productName: string;
   quantity: number;
@@ -110,7 +112,7 @@ export function invoiceHtml(d: InvoiceData): string {
             <tr>
               <td colspan="2">
                 <p style="margin:0 0 2px;font-size:12px;color:#9ca3af;">ডেলিভারি ঠিকানা</p>
-                <p style="margin:0;font-size:14px;font-weight:600;color:#111827;">${d.address}</p>
+                <p style="margin:0;font-size:14px;font-weight:600;color:#111827;">${d.address}, ${d.area}, ${d.district}</p>
               </td>
             </tr>
           </table>

@@ -20,6 +20,8 @@ export default async function InvoicePreviewPage({
     customerEmail: order.customerEmail ?? "",
     phone: order.phone,
     address: order.address,
+    area: order.area,
+    district: order.district,
     packageTitle: order.packageTitle,
     productName: order.productName,
     quantity: order.quantity,
