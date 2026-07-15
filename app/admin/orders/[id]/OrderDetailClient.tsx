@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, Trash2, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, Trash2, CheckCircle2, Copy, Check } from "lucide-react";
 import { ORDER_STATUSES, STATUS_COLORS, STATUS_LABELS, OrderStatus } from "@/lib/utils";
 
 interface Order {
@@ -44,6 +44,28 @@ export default function OrderDetailClient({ order }: { order: Order }) {
   const [loading, setLoading] = useState(false);
   const [deleting, setDeleting] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const paymentLabel =
+    order.paymentMethod === "cod" ? "ক্যাশ অন ডেলিভারি" : order.paymentMethod === "bkash" ? "বিকাশ" : "নগদ";
+  const deliveryZoneLabel = order.deliveryArea === "inside_dhaka" ? "ঢাকার ভিতরে" : "ঢাকার বাইরে";
+
+  const copyText = `নাম: ${order.customerName}
+মোবাইল: ${order.phone}
+ঠিকানা: ${order.address}, ${order.area}, ${order.district} (${deliveryZoneLabel})
+পণ্য: ${order.productName} (${order.packageTitle})
+পরিমাণ: ${order.quantity}
+পণ্যের মূল্য: ৳${order.productPrice.toLocaleString()}
+ডেলিভারি চার্জ: ৳${order.deliveryCharge}
+মোট: ৳${order.totalAmount.toLocaleString()}
+পেমেন্ট: ${paymentLabel}
+স্ট্যাটাস: ${STATUS_LABELS[status as OrderStatus] || status}`;
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(copyText);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   const handleStatusUpdate = async () => {
     if (selected === status) return;
@@ -90,6 +112,25 @@ export default function OrderDetailClient({ order }: { order: Order }) {
           <Trash2 size={15} />
           {deleting ? "মুছছে..." : "মুছুন"}
         </button>
+      </div>
+
+      {/* Copy Box for Delivery Team */}
+      <div className="mb-5 bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+        <div className="flex items-center justify-between mb-3">
+          <p className="font-semibold text-gray-900 text-sm">ডেলিভারি তথ্য (কপি বক্স)</p>
+          <button
+            onClick={handleCopy}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+              copied ? "bg-green-100 text-green-700" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+            }`}
+          >
+            {copied ? <Check size={14} /> : <Copy size={14} />}
+            {copied ? "কপি হয়েছে" : "কপি করুন"}
+          </button>
+        </div>
+        <pre className="whitespace-pre-wrap break-words text-sm text-gray-700 bg-gray-50 rounded-xl p-4 font-sans">
+          {copyText}
+        </pre>
       </div>
 
       <div className="grid lg:grid-cols-3 gap-5">
